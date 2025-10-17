@@ -1,0 +1,89 @@
+Here is a complete list of commands for your 3-router RIP experiment in Packet Tracer. You can copy-paste these into each router's CLI.
+
+---
+
+### **Router R1**
+```
+enable
+configure terminal
+
+interface gig0/0
+ip address 192.168.1.1 255.255.255.0
+no shutdown
+exit
+
+interface gig0/1
+ip address 192.168.12.1 255.255.255.0
+no shutdown
+exit
+
+router rip
+version 2
+network 192.168.1.0
+network 192.168.12.0
+exit
+exit
+```
+
+---
+
+### **Router R2**
+```
+enable
+configure terminal
+
+interface gig0/0
+ip address 192.168.12.2 255.255.255.0
+no shutdown
+exit
+
+interface gig0/1
+ip address 192.168.23.1 255.255.255.0
+no shutdown
+exit
+
+router rip
+version 2
+network 192.168.12.0
+network 192.168.23.0
+exit
+exit
+```
+
+---
+
+### **Router R3**
+```
+enable
+configure terminal
+
+interface gig0/0
+ip address 192.168.23.2 255.255.255.0
+no shutdown
+exit
+
+interface gig0/1
+ip address 192.168.3.1 255.255.255.0
+no shutdown
+exit
+
+router rip
+version 2
+network 192.168.23.0
+exit
+exit
+```
+
+---
+
+### **Optional PC Configuration**
+- PC1: IP 192.168.1.2, Gateway 192.168.1.1
+- PC3: IP 192.168.3.2, Gateway 192.168.3.1
+
+Test connectivity:
+```
+ping 192.168.23.2   # from R1 to R3
+ping 192.168.3.2    # from PC1 to PC3
+```
+
+This setup follows the **same router sequence and IP scheme** you asked for.
