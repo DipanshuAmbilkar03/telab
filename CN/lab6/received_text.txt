@@ -1,0 +1,3 @@
+Hello, this is a sample text file for UDP socket file transfer experiment.
+This file demonstrates reliable transmission of text using UDP protocol.
+Department of AI & DS, ADYPSOE.
