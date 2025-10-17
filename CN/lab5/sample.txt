@@ -1,0 +1,4 @@
+Name: Dipanshu Ambilkar
+Department: AI & DS
+Experiment: TCP Socket Programming
+Task: Say Hello + File Transfer
