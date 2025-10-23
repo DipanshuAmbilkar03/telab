@@ -1,0 +1,75 @@
+// 🧩 MongoDB Lab 3 – CRUD Operations
+
+// Step 1: Create/Use Database
+use collegeDB
+
+// Step 2: Create Collection and Insert Documents
+db.students.insertMany([
+  { _id: 1, name: "Dipanshu", age: 20, branch: "Computer", marks: 85 },
+  { _id: 2, name: "Aarav", age: 19, branch: "Mechanical", marks: 65 },
+  { _id: 3, name: "Priya", age: 21, branch: "Computer", marks: 92 },
+  { _id: 4, name: "Neha", age: 20, branch: "Civil", marks: 70 },
+  { _id: 5, name: "Ravi", age: 22, branch: "Electrical", marks: 60 }
+])
+
+// Check all data
+db.students.find().pretty()
+
+// CREATE: Insert a single document
+db.students.insertOne({ name: "Sanya", age: 20, branch: "Computer", marks: 88 })
+
+// READ: Fetch all documents
+db.students.find().pretty()
+
+// Fetch documents with filter
+db.students.find({ branch: "Computer" }).pretty()
+
+// Projection: show only name and marks
+db.students.find({}, { name: 1, marks: 1, _id: 0 }).pretty()
+
+// Comparison operator: marks greater than 70
+db.students.find({ marks: { $gt: 70 } }).pretty()
+
+// UPDATE: Update one document (Ravi's marks to 75)
+db.students.updateOne(
+  { name: "Ravi" },
+  { $set: { marks: 75 } }
+)
+
+// Update many documents (increase marks by 5 for Computer branch)
+db.students.updateMany(
+  { branch: "Computer" },
+  { $inc: { marks: 5 } }
+)
+
+// DELETE: Delete one document (Aarav)
+db.students.deleteOne({ name: "Aarav" })
+
+// Delete many documents (marks less than 70)
+db.students.deleteMany({ marks: { $lt: 70 } })
+
+// SAVE alternative: upsert Neha's document
+db.students.updateOne(
+  { _id: 4 },
+  { $set: { name: "Neha", age: 20, branch: "Civil", marks: 80 } },
+  { upsert: true }
+)
+
+// LOGICAL OPERATORS
+// $and
+db.students.find({ $and: [ { branch: "Computer" }, { marks: { $gt: 80 } } ] }).pretty()
+
+// $or
+db.students.find({ $or: [ { branch: "Civil" }, { marks: { $lt: 70 } } ] }).pretty()
+
+// $not
+db.students.find({ marks: { $not: { $lt: 80 } } }).pretty()
+
+// $nor
+db.students.find({ $nor: [ { branch: "Computer" }, { marks: { $gt: 90 } } ] }).pretty()
+
+// Display all data after operations
+db.students.find().pretty()
+
+// Drop the collection (optional)
+//db.students.drop()
