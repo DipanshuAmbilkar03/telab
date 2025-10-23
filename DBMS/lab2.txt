@@ -1,0 +1,106 @@
+-- Database Management System Lab Experiment 2 
+-- Owner: DIPANSHU AMBILKAR A - 49
+-- please update the data below otherwise exter le legi tumhara 
+-- copy paste each query one by one for new ones  
+
+-- Create database
+DROP DATABASE IF EXISTS lab2;
+CREATE DATABASE lab2;
+USE lab2;
+
+-- Step 1: Create student table
+DROP TABLE IF EXISTS student;
+CREATE TABLE student (
+    rollNo INT PRIMARY KEY,
+    name VARCHAR(50),
+    email VARCHAR(100)
+);
+
+-- Step 2: Create studinfo table
+DROP TABLE IF EXISTS studinfo;
+CREATE TABLE studinfo (
+    rollNo INT PRIMARY KEY,
+    dept VARCHAR(50),
+    cgpa DECIMAL(4,2)
+);
+
+-- Step 3: Insert sample data into student table
+INSERT INTO student (rollNo, name, email) VALUES
+(1, 'dipanshu', 'dipanshuambilker@gmail.com'),
+(2,'Prajkta','ahirraoprajkta@gmail.com'),
+(3,'Bhakti','bhumare.Bhakti@gmail.com'),
+(4, 'ONYX', 'onyx123@gmail.com'),
+(5, 'Ketan', 'ketan.sharma@gmail.com'),
+(6, 'Monu', 'monu1999@gmail.com'),
+(7, 'Sallu', 'sallu_k@gmail.com'),
+(8, 'Gwen', 'gwen.stacy@gmail.com');
+
+-- Step 4: Insert sample data into studinfo table
+INSERT INTO studinfo (rollNo, dept, cgpa) VALUES
+(1, 'AI&DS', NULL),
+(4, 'AI&DS', 7.25),
+(5, 'Mech', 6.9),
+(6, 'CS', 9.45),
+(7, 'CS', 10),
+(8, 'AI&DS', NULL);
+
+-- Step 5: Queries
+
+-- 1. INNER JOIN – Get students with matching academic records
+SELECT s.rollNo, s.name, s.email, si.dept, si.cgpa
+FROM student s
+INNER JOIN studinfo si ON s.rollNo = si.rollNo;
+
+-- 2. LEFT JOIN – Show all students, even if no academic record exists
+SELECT s.rollNo, s.name, s.email, si.dept, si.cgpa
+FROM student s
+LEFT JOIN studinfo si ON s.rollNo = si.rollNo;
+
+-- 3. RIGHT JOIN – Show all academic records, even if no student data
+SELECT s.rollNo, s.name, s.email, si.dept, si.cgpa
+FROM student s
+RIGHT JOIN studinfo si ON s.rollNo = si.rollNo;
+
+-- 4. FULL OUTER JOIN (Simulated in MySQL using UNION)
+SELECT s.rollNo, s.name, si.dept, si.cgpa
+FROM student s
+LEFT JOIN studinfo si ON s.rollNo = si.rollNo
+UNION
+SELECT s.rollNo, s.name, si.dept, si.cgpa
+FROM student s
+RIGHT JOIN studinfo si ON s.rollNo = si.rollNo;
+
+-- 5. Subquery – List students with highest CGPA
+DROP VIEW IF EXISTS viewstud;
+CREATE VIEW viewstud AS
+SELECT s.rollNo, s.name, s.email, si.dept, si.cgpa
+FROM student s
+JOIN studinfo si ON s.rollNo = si.rollNo;
+
+SELECT name, email
+FROM viewstud
+WHERE cgpa = (SELECT MAX(cgpa) FROM viewstud);
+
+-- 6. Subquery – Students from CS department
+SELECT name, email
+FROM viewstud
+WHERE dept = 'CS';
+
+-- 7. View Query – Get students with CGPA above 8
+SELECT name, email
+FROM viewstud
+WHERE cgpa > 8;
+
+-- 8. Subquery in FROM clause – Average CGPA by department
+SELECT dept, AVG(cgpa) AS avg_cgpa
+FROM studinfo
+WHERE cgpa IS NOT NULL
+GROUP BY dept;
+
+-- 9. Using IS NULL – List students whose CGPA is not recorded
+SELECT name, email
+FROM viewstud
+WHERE cgpa IS NULL;
+
+-- 10. Verify the view
+SELECT * FROM viewstud;
