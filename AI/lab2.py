@@ -1,11 +1,10 @@
-
 from pyamaze import maze,agent,textLabel
 from queue import PriorityQueue
 def h(cell1,cell2):
     x1,y1=cell1
     x2,y2=cell2
-
     return abs(x1-x2) + abs(y1-y2)
+
 def aStar(m):
     start=(m.rows,m.cols)
     g_score={cell:float('inf') for cell in m.grid}
@@ -47,10 +46,10 @@ def aStar(m):
     return fwdPath
 
 if __name__=='__main__':
-    m=maze(20,20)
+    m=maze(5,5)
     m.CreateMaze()
     path=aStar(m)
-
+    
     a=agent(m,footprints=True)
     m.tracePath({a:path})
     l=textLabel(m,'A Star Path Length',len(path)+1)
