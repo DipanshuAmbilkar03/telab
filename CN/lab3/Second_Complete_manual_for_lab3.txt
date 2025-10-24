@@ -1,0 +1,116 @@
+! ====================================================
+! ✅ NETWORK TOPOLOGY
+! PC0 — Router3 — Router5 — Router4 — PC2
+!
+! Router3 = R1
+! Router5 = R2
+! Router4 = R3
+!
+! RIP Version 2 used for dynamic routing
+! ====================================================
+
+! ----------------------------------------------------
+! 🧩 Router3 (R1)
+! ----------------------------------------------------
+enable
+configure terminal
+
+! Interface to PC0
+interface gig0/0
+ ip address 192.168.1.1 255.255.255.0
+ no shutdown
+exit
+
+! Interface to Router5
+interface gig0/1
+ ip address 192.168.12.1 255.255.255.0
+ no shutdown
+exit
+
+! Enable RIP v2
+router rip
+ version 2
+ network 192.168.1.0
+ network 192.168.12.0
+ no auto-summary
+exit
+exit
+write memory
+! ----------------------------------------------------
+
+
+! ----------------------------------------------------
+! 🧩 Router5 (R2)
+! ----------------------------------------------------
+enable
+configure terminal
+
+! Interface to Router3
+interface gig0/0
+ ip address 192.168.12.2 255.255.255.0
+ no shutdown
+exit
+
+! Interface to Router4
+interface gig0/1
+ ip address 192.168.23.1 255.255.255.0
+ no shutdown
+exit
+
+! Enable RIP v2
+router rip
+ version 2
+ network 192.168.12.0
+ network 192.168.23.0
+ no auto-summary
+exit
+exit
+write memory
+! ----------------------------------------------------
+
+
+! ----------------------------------------------------
+! 🧩 Router4 (R3)
+! ----------------------------------------------------
+enable
+configure terminal
+
+! Interface to Router5
+interface gig0/0
+ ip address 192.168.23.2 255.255.255.0
+ no shutdown
+exit
+
+! Interface to PC2
+interface gig0/1
+ ip address 192.168.3.1 255.255.255.0
+ no shutdown
+exit
+
+! Enable RIP v2
+router rip
+ version 2
+ network 192.168.23.0
+ network 192.168.3.0
+ no auto-summary
+exit
+exit
+write memory
+! ----------------------------------------------------
+
+
+! ====================================================
+! 🧠 PC CONFIGURATION SUMMARY
+!
+! PC0:
+!   IP Address      192.168.1.2
+!   Subnet Mask     255.255.255.0
+!   Default Gateway 192.168.1.1
+!
+! PC2:
+!   IP Address      192.168.3.2
+!   Subnet Mask     255.255.255.0
+!   Default Gateway 192.168.3.1
+!
+! After setup: ping 192.168.3.2 from PC0 → should work.
+! ====================================================
