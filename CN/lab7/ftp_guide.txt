@@ -1,0 +1,30 @@
+Network: Web + DNS Server Configuration using Switch
+
+Devices:
+- 1 PC (Client)
+- 1 Switch
+- 1 DNS Server
+- 1 Web Server
+
+IP Addressing:
+PC0 - 192.168.1.10 / 255.255.255.0
+Web Server - 192.168.1.20 / 255.255.255.0
+DNS Server - 192.168.1.30 / 255.255.255.0
+Gateway (optional) - 192.168.1.1
+
+Configuration Steps:
+1. Assign IP addresses to all devices.
+2. On DNS Server → Enable DNS service → Add entry:
+   Name: www.webserver.com
+   Address: 192.168.1.20
+3. On Web Server → Enable HTTP service.
+4. On PC → Set DNS to 192.168.1.30.
+5. Test using:
+   ping 192.168.1.20
+   nslookup www.webserver.com
+   Open browser → http://www.webserver.com
+
+Expected Output:
+- Ping replies received.
+- DNS resolves the domain name.
+- Web page loads successfully.
