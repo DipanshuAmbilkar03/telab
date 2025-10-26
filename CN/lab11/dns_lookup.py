@@ -8,12 +8,12 @@ choice = input("Enter choice (1 or 2): ")
 if choice == "1":
     domain = input("Enter Domain Name (e.g., google.com): ")
     try:
-        # ip = socket.gethostbyname(domain)
-        info = socket.getaddrinfo(domain, None)
-        for result in info:
-            print(result[4][0])
+        ip = socket.gethostbyname(domain)
+        # info = socket.getaddrinfo(domain, None)
+        # for result in info:
+        #     print(result[4][0])
 
-        print(f"IP address of {domain} is: {info}")
+        print(f"IP address of {domain} is: {ip}")
     except socket.gaierror:
         print("Invalid domain name or DNS lookup failed!")
 
