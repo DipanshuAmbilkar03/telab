@@ -1,3 +1,8 @@
+-- Create and use the database
+DROP DATABASE IF EXISTS rollcall_lab;
+CREATE DATABASE rollcall_lab;
+USE rollcall_lab;
+
 -- Drop if exists (optional for re-run)
 DROP TABLE IF EXISTS O_Roll_Call;
 DROP TABLE IF EXISTS N_Roll_Call;
@@ -20,12 +25,12 @@ INSERT INTO O_Roll_Call VALUES (101, 'Dipanshu');
 
 -- Insert sample data in NEW table (duplicates + new)
 INSERT INTO N_Roll_Call VALUES (101, 'Dipanshu'); -- duplicate
-INSERT INTO N_Roll_Call VALUES (102, 'Chinu');
-INSERT INTO N_Roll_Call VALUES (103, 'Pranjal');
-INSERT INTO N_Roll_Call VALUES (104, 'Ketan');
-INSERT INTO N_Roll_Call VALUES (105, 'Priya');
-INSERT INTO N_Roll_Call VALUES (106, 'Prajkta');
-INSERT INTO N_Roll_Call VALUES (107, 'Bhakti');
+INSERT INTO N_Roll_Call VALUES (102, 'Aarohi Deshmukh');
+INSERT INTO N_Roll_Call VALUES (103, 'Kashish Sharma');
+INSERT INTO N_Roll_Call VALUES (104, 'Isha Mehta');
+INSERT INTO N_Roll_Call VALUES (105, 'Priya Iyer');
+INSERT INTO N_Roll_Call VALUES (106, 'Ananya Nair');
+INSERT INTO N_Roll_Call VALUES (107, 'Mitali Joshi');
 
 -- Stored Procedure
 DELIMITER $$
