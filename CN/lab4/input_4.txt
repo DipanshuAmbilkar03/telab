@@ -1,0 +1,6 @@
+Enter number of routers: 4
+Enter cost matrix (use 999 for infinity):
+0   2   7   999
+2   0   999 3
+7   999 0   1
+999 3   1   0
