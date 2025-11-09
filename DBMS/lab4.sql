@@ -1,3 +1,8 @@
+-- Create and use the database
+DROP DATABASE IF EXISTS library_lab;
+CREATE DATABASE library_lab;
+USE library_lab;
+
 -- Drop previous tables & procedure (optional)
 DROP TABLE IF EXISTS Fine;
 DROP TABLE IF EXISTS Borrower;
@@ -20,15 +25,15 @@ CREATE TABLE IF NOT EXISTS Fine (
     Amt DECIMAL(10,2)
 );
 
--- Insert Sample Data (Same Names Used Earlier)
+-- Insert Sample Data (Updated Names)
 INSERT INTO Borrower (Roll_no, Name, Date_of_Issue, Name_of_Book, Status) VALUES
 (101, 'Dipanshu', '2025-07-01', 'Database Systems', '1'),
 (102, 'Chinu', '2025-08-05', 'Operating Systems', '1'),
-(103, 'Pranjal',  '2025-08-20', 'Computer Networks', '1'),
+(103, 'Pranjal', '2025-08-20', 'Computer Networks', '1'),
 (104, 'Ketan', '2025-08-10', 'AI Foundations', '1'),
 (105, 'Priya', '2025-09-01', 'DBMS Lab Manual', '1'),
-(106, 'Prajkta', '2025-09-15', 'Software Engineering', '1'),
-(107, 'Bhakti', '2025-09-18', 'Data Science Basics', '1');
+(106, 'Kashish', '2025-09-15', 'Software Engineering', '1'),
+(107, 'Raj', '2025-09-18', 'Data Science Basics', '1');
 
 -- Stored Procedure
 DELIMITER $$
