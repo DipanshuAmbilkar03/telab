@@ -1,8 +1,7 @@
 -- Database Management System Lab Experiment 2 
 -- Owner: DIPANSHU AMBILKAR A - 49
--- please update the data below otherwise exter le legi tumhara 
+-- please update the data below otherwise external le legi tumhara 
 -- copy paste each query one by one for new ones  
-
 -- Create database
 DROP DATABASE IF EXISTS lab2;
 CREATE DATABASE lab2;
@@ -26,22 +25,22 @@ CREATE TABLE studinfo (
 
 -- Step 3: Insert sample data into student table
 INSERT INTO student (rollNo, name, email) VALUES
-(1, 'dipanshu', 'dipanshuambilker@gmail.com'),
-(2,'Prajkta','ahirraoprajkta@gmail.com'),
-(3,'Bhakti','bhumare.Bhakti@gmail.com'),
-(4, 'ONYX', 'onyx123@gmail.com'),
-(5, 'Ketan', 'ketan.sharma@gmail.com'),
-(6, 'Monu', 'monu1999@gmail.com'),
-(7, 'Sallu', 'sallu_k@gmail.com'),
-(8, 'Gwen', 'gwen.stacy@gmail.com');
+(1, 'Dipanshu Ambilkar', 'dipanshu.ambilkar@gmail.com'),
+(2, 'Aarohi Deshmukh', 'aarohi.deshmukh@gmail.com'),
+(3, 'Siya Patel', 'siya.patel@gmail.com'),
+(4, 'Kritika Sharma', 'kritika.sharma@gmail.com'),
+(5, 'Isha Mehta', 'isha.mehta@gmail.com'),
+(6, 'Ananya Nair', 'ananya.nair@gmail.com'),
+(7, 'Riya Singh', 'riya.singh@gmail.com'),
+(8, 'Mitali Joshi', 'mitali.joshi@gmail.com');
 
 -- Step 4: Insert sample data into studinfo table
 INSERT INTO studinfo (rollNo, dept, cgpa) VALUES
 (1, 'AI&DS', NULL),
 (4, 'AI&DS', 7.25),
-(5, 'Mech', 6.9),
-(6, 'CS', 9.45),
-(7, 'CS', 10),
+(5, 'Mechanical', 6.90),
+(6, 'Computer Science', 9.45),
+(7, 'Computer Science', 10.00),
 (8, 'AI&DS', NULL);
 
 -- Step 5: Queries
@@ -84,7 +83,7 @@ WHERE cgpa = (SELECT MAX(cgpa) FROM viewstud);
 -- 6. Subquery – Students from CS department
 SELECT name, email
 FROM viewstud
-WHERE dept = 'CS';
+WHERE dept = 'Computer Science';
 
 -- 7. View Query – Get students with CGPA above 8
 SELECT name, email
