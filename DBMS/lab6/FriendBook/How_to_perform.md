@@ -1,73 +1,92 @@
-🧪 How to Perform This Experiment — FriendBook
-1️⃣ Install Node.js (if not already installed)
+# 🧪 How to Perform This Experiment — FriendBook
 
-Go to https://nodejs.org
+---
 
-Download and install Node.js (LTS version)
+## 1️⃣ Install Node.js (if not already installed)
 
-After installation, open VS Code → Terminal → New Terminal
+- Go to [https://nodejs.org](https://nodejs.org)  
+- Download and install **Node.js (LTS version)**  
+- After installation, open **VS Code → Terminal → New Terminal**  
+- Type the following commands to verify Node installation:
+  ```bash
+  node -v
+  npm -v
+  ```
 
-Type the following to check if Node is installed:
+---
 
-node -v
-npm -v
+## 2️⃣ Open CMD inside VS Code
 
-2️⃣ Open CMD inside VS Code
+- Open the **FriendBook** folder in **VS Code**  
+- Right-click → **Open in Integrated Terminal**  
+  *(or press `Ctrl + `)*  
 
-Open the FriendBook folder in VS Code.
+---
 
-Right-click → Open in Integrated Terminal (or press Ctrl + `).
-
-3️⃣ Install Required npm Packages
+## 3️⃣ Install Required npm Packages
 
 Type these commands one by one in the terminal:
-
+```bash
 npm i express
 npm i body-parser
 npm i mysql
+```
+💡 *If `mysql` gives issues, use this instead:*
+```bash
+npm i mysql2
+```
 
+---
 
-(If mysql gives issues, use npm i mysql2 instead.)
+## 4️⃣ Create Database
 
-4️⃣ Create Database
+- Open **MySQL / XAMPP / phpMyAdmin**  
+- Run the **schema.sql** file:
+  ```sql
+  SOURCE schema.sql;
+  ```
+- This will create the database and all required tables for **FriendBook**.
 
-Open MySQL / XAMPP / phpMyAdmin.
+---
 
-Run the schema.sql file.
+## 5️⃣ Connect Node.js Server with MySQL
 
-SOURCE schema.sql;
+- Open the **server.js** file.  
+- In the database connection section, find the line:
+  ```js
+  password: "your password"
+  ```
+- Replace `"your password"` with your actual **MySQL password** (for example, `"root"` or the one you set manually).
 
+---
 
-This will create the database and all required tables for FriendBook.
+## 6️⃣ Run the Node.js Server
 
-5️⃣ Connect Node.js Server with MySQL
-
-Open the server.js file.
-
-In the database connection section, find the line:
-
-password: "your password"
-
-
-Replace "your password" with your actual MySQL password (for example, "root" or whatever you set).
-
-6️⃣ Run the Node.js Server
-
-In VS Code terminal, type:
-
+Type the following command in VS Code terminal:
+```bash
 node --watch server.js
+```
+🌀 *This will start the Node server in watch mode, so it auto-restarts when you modify your code.*
 
+---
 
-This will start the Node server in watch mode, which means it will auto-restart if you edit the code.
+## 7️⃣ Open the Application
 
-7️⃣ Open the Application
-
-Once the server starts, go to your browser and type:
-
+Once the server starts successfully, open your browser and visit:
+```
 http://localhost:3000
+```
 
+🎯 The **FriendBook** web app will load and connect to your MySQL database.
 
-The FriendBook web app will open and connect to your MySQL database.
+---
 
-✅ Everything is done!
-Your Node.js server, database connection, and frontend are successfully running together.
+## ✅ Everything is Done!
+
+Your **Node.js server**, **MySQL database**, and **frontend (index.html)** are all connected and running successfully.  
+Now your **FriendBook** experiment is fully working!
+
+---
+
+### 💡 Made by:
+**Dipanshu Ambilkar**
