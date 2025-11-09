@@ -1,7 +1,11 @@
 -- Database Management System Lab Experiment 2 
 -- Owner: DIPANSHU AMBILKAR A - 49
 -- please update the data below otherwise external le legi tumhara 
--- copy paste each query one by one for new ones  
+-- copy paste entire query at once or one by one
+
+
+--Code start from here
+
 -- Create database
 DROP DATABASE IF EXISTS lab2;
 CREATE DATABASE lab2;
