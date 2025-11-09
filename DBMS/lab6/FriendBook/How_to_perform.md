@@ -1,8 +1,8 @@
-# 🧪 How to Perform This Experiment — FriendBook
+#  How to Perform This Experiment — FriendBook
 
 ---
 
-## 1️⃣ Install Node.js (if not already installed)
+##  Install Node.js (if not already installed)
 
 - Go to [https://nodejs.org](https://nodejs.org)  
 - Download and install **Node.js (LTS version)**  
@@ -15,7 +15,7 @@
 
 ---
 
-## 2️⃣ Open CMD inside VS Code
+##  Open CMD inside VS Code
 
 - Open the **FriendBook** folder in **VS Code**  
 - Right-click → **Open in Integrated Terminal**  
@@ -23,7 +23,7 @@
 
 ---
 
-## 3️⃣ Install Required npm Packages
+##  Install Required npm Packages
 
 Type these commands one by one in the terminal:
 ```bash
@@ -38,7 +38,7 @@ npm i mysql2
 
 ---
 
-## 4️⃣ Create Database
+##  Create Database
 
 - Open **MySQL / XAMPP / phpMyAdmin**  
 - Run the **schema.sql** file:
@@ -49,7 +49,7 @@ npm i mysql2
 
 ---
 
-## 5️⃣ Connect Node.js Server with MySQL
+## Connect Node.js Server with MySQL
 
 - Open the **server.js** file.  
 - In the database connection section, find the line:
@@ -60,13 +60,13 @@ npm i mysql2
 
 ---
 
-## 6️⃣ Run the Node.js Server
+## Run the Node.js Server
 
 Type the following command in VS Code terminal:
 ```bash
 node --watch server.js
 ```
-🌀 *This will start the Node server in watch mode, so it auto-restarts when you modify your code.*
+*This will start the Node server in watch mode, so it auto-restarts when you modify your code.*
 
 ---
 
@@ -77,16 +77,14 @@ Once the server starts successfully, open your browser and visit:
 http://localhost:3000
 ```
 
-🎯 The **FriendBook** web app will load and connect to your MySQL database.
+The **FriendBook** web app will load and connect to your MySQL database.
 
 ---
 
-## ✅ Everything is Done!
+## Everything is Done!
 
 Your **Node.js server**, **MySQL database**, and **frontend (index.html)** are all connected and running successfully.  
 Now your **FriendBook** experiment is fully working!
 
 ---
 
-### 💡 Made by:
-**Dipanshu Ambilkar**
