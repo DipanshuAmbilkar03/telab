@@ -1,57 +1,86 @@
-from pyamaze import maze,agent,textLabel
-from queue import PriorityQueue
-def h(cell1,cell2):
-    x1,y1=cell1
-    x2,y2=cell2
-    return abs(x1-x2) + abs(y1-y2)
+import heapq
 
-def aStar(m):
-    start=(m.rows,m.cols)
-    g_score={cell:float('inf') for cell in m.grid}
-    g_score[start]=0
-    f_score={cell:float('inf') for cell in m.grid}
-    f_score[start]=h(start,(1,1))
+# Node class for each position in the grid
+class Node:
+    def __init__(self, position, parent=None):
+        self.position = position
+        self.parent = parent
+        self.g = 0  # Cost from start to current node
+        self.h = 0  # Heuristic cost to goal
+        self.f = 0  # Total cost (g + h)
 
-    open=PriorityQueue()
-    open.put((h(start,(1,1)),h(start,(1,1)),start))
-    aPath={}
-    while not open.empty():
-        currCell=open.get()[2]
-        if currCell==(1,1):
-            break
-        for d in 'ESNW':
-            if m.maze_map[currCell][d]==True:
-                if d=='E':
-                    childCell=(currCell[0],currCell[1]+1)
-                if d=='W':
-                    childCell=(currCell[0],currCell[1]-1)
-                if d=='N':
-                    childCell=(currCell[0]-1,currCell[1])
-                if d=='S':
-                    childCell=(currCell[0]+1,currCell[1])
+    def __lt__(self, other):
+        return self.f < other.f
 
-                temp_g_score=g_score[currCell]+1
-                temp_f_score=temp_g_score+h(childCell,(1,1))
+# Manhattan distance heuristic function
+def heuristic(a, b):
+    return abs(a[0] - b[0]) + abs(a[1] - b[1])
 
-                if temp_f_score < f_score[childCell]:
-                    g_score[childCell]= temp_g_score
-                    f_score[childCell]= temp_f_score
-                    open.put((temp_f_score,h(childCell,(1,1)),childCell))
-                    aPath[childCell]=currCell
-    fwdPath={}
-    cell=(1,1)
-    while cell!=start:
-        fwdPath[aPath[cell]]=cell
-        cell=aPath[cell]
-    return fwdPath
+# A* search function
+def a_star_search(grid, start, goal):
+    open_list = []
+    closed_list = set()
+    start_node = Node(start)
+    goal_node = Node(goal)
 
-if __name__=='__main__':
-    m=maze(5,5)
-    m.CreateMaze()
-    path=aStar(m)
-    
-    a=agent(m,footprints=True)
-    m.tracePath({a:path})
-    l=textLabel(m,'A Star Path Length',len(path)+1)
+    heapq.heappush(open_list, start_node)
 
-    m.run()
+    while open_list:
+        current_node = heapq.heappop(open_list)
+        closed_list.add(current_node.position)
+
+        # Goal check
+        if current_node.position == goal_node.position:
+            path = []
+            while current_node:
+                path.append(current_node.position)
+                current_node = current_node.parent
+            return path[::-1]  # Reverse the path to get start → goal
+
+        # Possible moves (Right, Down, Left, Up)
+        neighbors = [(0, 1), (1, 0), (0, -1), (-1, 0)]
+
+        for dx, dy in neighbors:
+            neighbor_pos = (current_node.position[0] + dx, current_node.position[1] + dy)
+
+            # Check valid move and avoid obstacles
+            if (0 <= neighbor_pos[0] < len(grid) and 
+                0 <= neighbor_pos[1] < len(grid[0]) and 
+                grid[neighbor_pos[0]][neighbor_pos[1]] == 0):
+
+                if neighbor_pos in closed_list:
+                    continue
+
+                neighbor_node = Node(neighbor_pos, current_node)
+                neighbor_node.g = current_node.g + 1
+                neighbor_node.h = heuristic(neighbor_pos, goal_node.position)
+                neighbor_node.f = neighbor_node.g + neighbor_node.h
+
+                # Check if node already in open list with a better path
+                if any(open_node.position == neighbor_node.position and open_node.f <= neighbor_node.f for open_node in open_list):
+                    continue
+
+                heapq.heappush(open_list, neighbor_node)
+
+    return None  # No path found
+
+# Example grid (0 = free, 1 = obstacle)
+grid = [
+    [0, 1, 0, 0, 0],
+    [0, 1, 0, 1, 0],
+    [0, 0, 0, 1, 0],
+    [0, 1, 1, 1, 0],
+    [0, 0, 0, 0, 0]
+]
+
+start = (0, 0)
+goal = (4, 4)
+
+# Run A* search
+path = a_star_search(grid, start, goal)
+
+# Output
+if path:
+    print("Path found:", path)
+else:
+    print("No path found.")
