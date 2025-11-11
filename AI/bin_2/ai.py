@@ -46,10 +46,15 @@ def aStar(m):
     return fwdPath
 
 if __name__=='__main__':
-    m=maze(5,5)
+    m=maze(8,8)
     m.CreateMaze()
     path=aStar(m)
     
+    print("Final shortest path found by A*:")
+    for key in path:
+        print(f"{key} -> {path[key]}")
+    print(f"\nTotal path length: {len(path)+1}")
+
     a=agent(m,footprints=True)
     m.tracePath({a:path})
     l=textLabel(m,'A Star Path Length',len(path)+1)
