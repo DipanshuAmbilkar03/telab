@@ -1,2 +1,7 @@
 ignr
-.exe
+*.exe
+node_modules
+package.json
+package-lock.json
+.ipynb-checkpoints
+screenshots/
