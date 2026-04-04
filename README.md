@@ -1,7 +1,7 @@
 # Practical Code Repository
 
 Namaste Duniya! 👋  
-Welcome to the sacred land of **SPPU TE practical codes**, jahan deadline ke 2 ghante pehle sabko "bro code bhej" yaad aata hai.
+Welcome to your go-to space for **SPPU TE practical codes**, jahan last-minute prep bhi thoda easy ho jata hai.
 
 ---
 
