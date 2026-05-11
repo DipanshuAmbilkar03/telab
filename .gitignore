@@ -4,4 +4,9 @@ node_modules
 package.json
 package-lock.json
 .ipynb-checkpoints
+ANN_perform_merge_with_main/
+BigData_lab2/
 screenshots/
+.venv/
+.ipynb_checkpoints/
+tempCodeRunnerFile.cpp
