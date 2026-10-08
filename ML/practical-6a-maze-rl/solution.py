@@ -4,121 +4,80 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-rng = np.random.default_rng(42)
+r = np.random.default_rng(42)
+S, G = (0, 0), (7, 7)
+W = {(1, 1), (1, 2), (1, 3), (1, 5), (1, 6), (2, 1), (2, 3), (2, 5),
+     (3, 1), (3, 3), (3, 4), (3, 5), (3, 7), (4, 3), (4, 5), (4, 7),
+     (5, 0), (5, 1), (5, 3), (5, 5), (5, 7), (6, 5), (6, 7)}
+M = {"up": (-1, 0), "down": (1, 0), "left": (0, -1), "right": (0, 1)}
+m = list(M)
 
-SIZE = 8
-START = (0, 0)
-GOAL = (7, 7)
-WALLS = {
-    (1, 1), (1, 2), (1, 3), (1, 5), (1, 6),
-    (2, 1), (2, 3), (2, 5),
-    (3, 1), (3, 3), (3, 4), (3, 5), (3, 7),
-    (4, 3), (4, 5), (4, 7),
-    (5, 0), (5, 1), (5, 3), (5, 5), (5, 7),
-    (6, 5), (6, 7),
-}
-MOVES = {"up": (-1, 0), "down": (1, 0), "left": (0, -1), "right": (0, 1)}
-moves = list(MOVES)
-
-def step(pos, m):
-    r = pos[0] + MOVES[m][0]
-    c = pos[1] + MOVES[m][1]
-    if not (0 <= r < SIZE and 0 <= c < SIZE) or (r, c) in WALLS:
-        return pos, -5, False
-    if (r, c) == GOAL:
-        return (r, c), 20, True
-    return (r, c), -1, False
+def st(p, x):
+    a, b = p[0] + M[x][0], p[1] + M[x][1]
+    if not (0 <= a < 8 and 0 <= b < 8) or (a, b) in W:
+        return p, -5, False
+    return ((a, b), 20, True) if (a, b) == G else ((a, b), -1, False)
 
 def bfs():
-    q = deque([(START, 0)])
-    seen = {START}
+    q, s = deque([(S, 0)]), {S}
     while q:
-        pos, d = q.popleft()
-        if pos == GOAL:
+        p, d = q.popleft()
+        if p == G:
             return d
-        for m in moves:
-            npos, _, _ = step(pos, m)
-            if npos not in seen and npos != pos:
-                seen.add(npos)
-                q.append((npos, d + 1))
-    return None
+        for x in m:
+            n, _, _ = st(p, x)
+            if n not in s and n != p:
+                s.add(n)
+                q.append((n, d + 1))
 
 print("shortest path (BFS):", bfs())
-
-Q = np.zeros((SIZE, SIZE, 4))
-ALPHA, GAMMA = 0.2, 0.95
-EPISODES = 2000
-hist = []
-
-for ep in range(EPISODES):
-    eps = max(0.05, 1.0 - ep / (EPISODES * 0.8))
-    pos, done = START, False
-    total = 0
-    while not done:
-        r, c = pos
-        if rng.random() < eps:
-            a = rng.integers(4)
-        else:
-            a = int(np.argmax(Q[r, c]))
-        npos, reward, done = step(pos, moves[a])
-        nr, nc = npos
-        Q[r, c, a] += ALPHA * (reward + GAMMA * np.max(Q[nr, nc]) - Q[r, c, a])
-        pos, total = npos, total + reward
-    hist.append(total)
+Q, h = np.zeros((8, 8, 4)), []
+for ep in range(2000):
+    e, p, dn, tt = max(0.05, 1.0 - ep / 1600.0), S, False, 0
+    while not dn:
+        w, x = p
+        a = r.integers(4) if r.random() < e else int(np.argmax(Q[w, x]))
+        n, rw, dn = st(p, m[a])
+        Q[w, x, a] += 0.2 * (rw + 0.95 * np.max(Q[n[0], n[1]]) - Q[w, x, a])
+        p, tt = n, tt + rw
+    h.append(tt)
     if (ep + 1) % 500 == 0:
-        print("ep %d avg %.2f" % (ep + 1, np.mean(hist[-500:])))
-
+        print("ep %d avg %.2f" % (ep + 1, np.mean(h[-500:])))
 print("training done")
-
-EVAL = 100
-wins, lens = 0, []
-for _ in range(EVAL):
-    pos, path = START, [START]
-    while pos != GOAL and len(path) < 200:
-        r, c = pos
-        a = int(np.argmax(Q[r, c]))
-        pos, _, _ = step(pos, moves[a])
-        path.append(pos)
-    if path[-1] == GOAL:
-        wins += 1
-        lens.append(len(path) - 1)
-
-print("success rate: %.2f%%" % (100 * wins / EVAL))
-print("avg steps:", round(float(np.mean(lens)), 1))
-
-pos, path = START, [START]
-while pos != GOAL and len(path) < 200:
-    r, c = pos
-    a = int(np.argmax(Q[r, c]))
-    pos, _, _ = step(pos, moves[a])
-    path.append(pos)
-
-grid = [["." for _ in range(SIZE)] for _ in range(SIZE)]
-for r, c in WALLS:
-    grid[r][c] = "#"
-for r, c in path[1:-1]:
-    grid[r][c] = "*"
-grid[START[0]][START[1]] = "S"
-grid[GOAL[0]][GOAL[1]] = "G"
+ok, ln = 0, []
+for _ in range(100):
+    p, ph = S, [S]
+    while p != G and len(ph) < 200:
+        w, x = p
+        p, _, _ = st(p, m[int(np.argmax(Q[w, x]))])
+        ph.append(p)
+    if ph[-1] == G:
+        ok += 1
+        ln.append(len(ph) - 1)
+print("success rate: %.2f%%" % ok)
+print("avg steps:", round(float(np.mean(ln)), 1))
+p, ph = S, [S]
+while p != G and len(ph) < 200:
+    w, x = p
+    p, _, _ = st(p, m[int(np.argmax(Q[w, x]))])
+    ph.append(p)
 plt.figure()
-plt.imshow([[1 if (r, c) in WALLS else 0 for c in range(SIZE)] for r in range(SIZE)], cmap="Greys")
-pr = [p[0] for p in path]
-pc = [p[1] for p in path]
-plt.plot(pc, pr, color="red", linewidth=2)
-plt.plot(START[1], START[0], "go", markersize=10)
-plt.plot(GOAL[1], GOAL[0], "bo", markersize=10)
+plt.imshow([[1 if (a, b) in W else 0 for b in range(8)] for a in range(8)], cmap="Greys")
+plt.plot([q[1] for q in ph], [q[0] for q in ph], color="red", linewidth=2)
+plt.plot(S[1], S[0], "go", markersize=10)
+plt.plot(G[1], G[0], "bo", markersize=10)
 plt.title("maze path")
 plt.savefig("maze_path.png")
 print("saved maze_path.png")
-
-avg = np.convolve(hist, np.ones(50) / 50, mode="valid")
 plt.figure()
-plt.plot(avg)
-plt.xlabel("episode")
-plt.ylabel("reward")
-plt.title("maze learning curve")
+plt.plot(np.convolve(h, np.ones(50) / 50, mode="valid"))
+plt.xlabel("episode"); plt.ylabel("reward"); plt.title("maze learning curve")
 plt.savefig("learning_curve.png")
 print("saved learning_curve.png")
-
-for row in grid:
-    print(" ".join(row))
+g = [["." for _ in range(8)] for _ in range(8)]
+for a, b in W:
+    g[a][b] = "#"
+for a, b in ph[1:-1]:
+    g[a][b] = "*"
+g[S[0]][S[1]], g[G[0]][G[1]] = "S", "G"
+[print(" ".join(row)) for row in g]

@@ -1,5 +1,4 @@
-import numpy as np
-import pandas as pd
+import numpy as np, pandas as pd
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
@@ -8,48 +7,27 @@ from sklearn.decomposition import PCA
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import cross_val_score
 
-url = "https://media.geeksforgeeks.org/wp-content/uploads/Wine.csv"
-df = pd.read_csv(url)
-
-print(df.shape)
-print(df["Customer_Segment"].value_counts().sort_index())
-print(df.describe().round(2))
-
-X = df.drop("Customer_Segment", axis=1).values
-y = df["Customer_Segment"].values
-
-scaler = StandardScaler()
-Xs = scaler.fit_transform(X)
-
-pca = PCA()
-pca.fit(Xs)
-evr = pca.explained_variance_ratio_
-cum = np.cumsum(evr)
-for i in range(6):
-    print("PC%d %.4f cum %.4f" % (i + 1, evr[i], cum[i]))
-n = int(np.argmax(cum >= 0.95) + 1)
-print("components for 95 percent:", n)
-
-pca2 = PCA(n_components=2)
-X2 = pca2.fit_transform(Xs)
-print("reduced shape:", X2.shape)
-print("variance of 2 comps:", round(float(pca2.explained_variance_ratio_.sum()), 4))
-
-loadings = pd.DataFrame(pca2.components_.T, index=df.drop("Customer_Segment", axis=1).columns, columns=["PC1", "PC2"])
-print(loadings["PC1"].abs().sort_values(ascending=False).head(4))
-print(loadings["PC2"].abs().sort_values(ascending=False).head(4))
-
-colors = {1: "red", 2: "green", 3: "blue"}
+d = pd.read_csv("https://media.geeksforgeeks.org/wp-content/uploads/Wine.csv")
+print(d.shape)
+print(d["Customer_Segment"].value_counts().sort_index())
+print(d.describe().round(2))
+X = StandardScaler().fit_transform(d.drop("Customer_Segment", axis=1).values)
+y = d["Customer_Segment"].values
+p = PCA().fit(X)
+e, c = p.explained_variance_ratio_, np.cumsum(p.explained_variance_ratio_)
+[print("PC%d %.4f cum %.4f" % (i + 1, e[i], c[i])) for i in range(6)]
+print("components for 95 percent:", int(np.argmax(c >= 0.95) + 1))
+q = PCA(n_components=2)
+Z = q.fit_transform(X)
+print("reduced shape:", Z.shape)
+print("variance of 2 comps:", round(float(q.explained_variance_ratio_.sum()), 4))
+L = pd.DataFrame(q.components_.T, index=d.drop("Customer_Segment", axis=1).columns, columns=["PC1", "PC2"])
+print(L["PC1"].abs().sort_values(ascending=False).head(4))
+print(L["PC2"].abs().sort_values(ascending=False).head(4))
+cc = {1: "red", 2: "green", 3: "blue"}
 plt.figure()
-for s in [1, 2, 3]:
-    pts = X2[y == s]
-    plt.scatter(pts[:, 0], pts[:, 1], c=colors[s], label="seg %d" % s)
-plt.xlabel("PC1")
-plt.ylabel("PC2")
-plt.title("PCA wine")
-plt.legend()
+[plt.scatter(Z[y == s][:, 0], Z[y == s][:, 1], c=cc[s], label="seg %d" % s) for s in [1, 2, 3]]
+plt.xlabel("PC1"); plt.ylabel("PC2"); plt.title("PCA wine"); plt.legend()
 plt.savefig("pca_wine.png")
 print("saved pca_wine.png")
-
-scores = cross_val_score(KNeighborsClassifier(n_neighbors=5), X2, y, cv=5)
-print("knn accuracy on 2 pcs:", round(float(scores.mean()), 4))
+print("knn accuracy on 2 pcs:", round(float(cross_val_score(KNeighborsClassifier(n_neighbors=5), Z, y, cv=5).mean()), 4))
