@@ -1,0 +1,301 @@
+customer_id,gender,age,tenure,monthly_charges,total_charges,contract,churn
+1,Male,51,21,117.92,6825.09,Two year,No
+2,FEMALE,56,28,28.16,6095.94,One year,Yes
+3,Female,25,32,55.84,3074.01,Two year,No
+4,Male,50,10,108.77,4773.68,Month-to-month,Yes
+5,male ,67,21,82.4,2290.87,Two year,No
+6,FEMALE,36,23,112.24,7371.02,Two year,Yes
+7,male ,47,6,102.61,3395.32,Month-to-month,No
+8,FEMALE,33,10,70.38,823.33,Month-to-month,Yes
+9,Male,63,22,70.12,5292.17,Two year,Yes
+10,FEMALE,46,29,59.44,2193.65,Two year,No
+11,male ,38,42,35.34,1859.38,One year,Yes
+12,Female,44,51,23.84,4970.63,Two year,Yes
+13,FEMALE,34,47,60.46,4564.66,Two year,No
+14,FEMALE,24,53,44.62,3827.65,Two year,No
+15,Female,56,67,30.99,5044.43,One year,No
+16,FEMALE,42,66,66.67,2535.6,Two year,No
+17,FEMALE,24,18,40.62,3055.86,Two year,Yes
+18,FEMALE,61,26,39.64,6299.89,Month-to-month,No
+19,male ,39,36,91.69,6968.19,Two year,No
+20,Male,67,26,68.36,3686.05,Two year,No
+21,Male,39,67,37.2,6832.75,One year,Yes
+22,Male,59,9,47.47,3786.43,One year,No
+23,Female,54,67,110.38,5081.75,Month-to-month,No
+24,FEMALE,59,54,115.27,5134.25,Month-to-month,No
+25,FEMALE,58,19,84.56,4873.39,One year,No
+26,male ,37,39,50.15,2464.13,Month-to-month,Yes
+27,Male,22,6,89.17,7256.32,Month-to-month,Yes
+28,male ,52,33,90.97,3113.44,Month-to-month,Yes
+29,FEMALE,30,11,90.51,6792.68,Month-to-month,No
+30,FEMALE,33,59,46.02,4335.69,Two year,No
+31,FEMALE,65,4,100.93,4846.18,One year,No
+32,male ,57,11,21.66,6839.09,Month-to-month,Yes
+33,male ,39,42,42.93,6791.47,Month-to-month,No
+34,Female,19,24,22.5,5447.21,Two year,Yes
+35,male ,69,45,95.86,212.51,One year,Yes
+36,Male,63,32,95.34,3704.34,Two year,Yes
+37,FEMALE,46,38,42.69,4881.15,Two year,No
+38,FEMALE,41,8,70.87,1704.38,One year,Yes
+39,Female,54,61,82.2,5033.55,One year,Yes
+40,Male,35,18,24.79,7991.25,Two year,Yes
+41,Male,36,12,20.97,732.6,Two year,Yes
+42,male ,46,28,20.21,3532.14,One year,Yes
+43,male ,45,7,31.96,5564.58,Month-to-month,No
+44,FEMALE,69,18,116.81,2285.22,One year,Yes
+45,FEMALE,60,32,61.77,2016.19,Month-to-month,No
+46,Female,56,7,84.47,1565.12,Month-to-month,Yes
+47,FEMALE,28,6,117.13,1516.32,Two year,No
+48,male ,44,13,93.25,4669.93,One year,Yes
+49,Male,63,70,87.82,7502.73,Month-to-month,Yes
+50,Male,51,25,61.62,6399.69,Month-to-month,No
+51,male ,20,10,108.74,2968.39,One year,No
+52,Male,56,34,58.7,103.07,Month-to-month,Yes
+53,male ,50,53,103.49,2738.76,One year,No
+54,Male,39,34,118.98,4842.23,Month-to-month,Yes
+55,male ,30,46,98.63,1330.24,Two year,Yes
+56,FEMALE,37,59,23.14,4946.76,One year,No
+57,FEMALE,36,63,59.07,731.56,Two year,Yes
+58,Female,26,6,70.13,1660.08,Two year,No
+59,FEMALE,29,52,109.88,667.67,Two year,No
+60,FEMALE,59,44,25.99,3030.79,One year,Yes
+61,male ,41,13,68.42,3668.28,Two year,No
+62,Male,45,65,85.27,377.84,Month-to-month,No
+63,male ,69,4,103.73,1686.84,Two year,Yes
+64,Female,34,70,62.42,2798.52,Two year,Yes
+65,male ,22,8,60.62,4174.67,Two year,Yes
+66,FEMALE,65,39,42.83,2758.35,One year,No
+67,Female,30,3,66.23,4424.87,One year,Yes
+68,Female,52,65,105.85,2736.26,Month-to-month,Yes
+69,Male,41,30,91.86,6195.09,One year,Yes
+70,FEMALE,59,34,94.74,7605.87,Month-to-month,Yes
+71,Female,37,49,70.12,6393.94,Month-to-month,Yes
+72,male ,51,53,86.04,6130.64,One year,No
+73,Male,49,51,34.91,3962.55,Month-to-month,No
+74,male ,35,66,73.5,3163.43,Two year,Yes
+75,Female,43,42,89.32,7867.85,Two year,Yes
+76,Female,27,41,27.25,1725.41,Two year,Yes
+77,Female,18,62,70.02,7867.62,Month-to-month,No
+78,Female,26,7,23.95,6574.87,One year,No
+79,male ,66,37,41.32,2028.14,Two year,No
+80,Male,28,14,56.9,6990.7,Two year,No
+81,male ,26,46,104.76,943.06,Two year,No
+82,male ,55,3,107.57,2509.13,Two year,Yes
+83,FEMALE,53,63,20.05,6292.15,One year,No
+84,Male,58,3,61.0,1450.94,One year,Yes
+85,FEMALE,64,4,108.94,4838.34,One year,Yes
+86,Male,53,11,78.52,5351.46,Month-to-month,No
+87,male ,32,64,94.69,6030.77,Month-to-month,No
+88,male ,33,24,78.79,4222.55,Month-to-month,Yes
+89,Male,67,17,62.75,1686.94,Two year,No
+90,Male,62,63,73.32,1112.68,Month-to-month,Yes
+91,male ,24,35,115.65,3340.57,Two year,Yes
+92,male ,51,29,107.82,2790.4,Month-to-month,Yes
+93,Male,52,18,86.11,5591.87,Two year,Yes
+94,male ,49,70,70.33,6683.52,Two year,No
+95,Male,67,67,29.61,611.94,One year,Yes
+96,Female,47,33,111.72,3689.99,Month-to-month,Yes
+97,male ,52,61,34.72,5294.04,One year,No
+98,Female,51,6,37.7,7461.13,Month-to-month,No
+99,male ,53,9,29.84,2332.82,One year,Yes
+100,male ,31,50,44.28,7827.1,Month-to-month,No
+101,male ,30,17,22.06,5569.39,Two year,Yes
+102,FEMALE,65,30,30.06,7259.8,Month-to-month,No
+103,Male,37,51,78.44,6478.34,One year,Yes
+104,male ,63,51,39.91,3516.76,One year,Yes
+105,Female,62,22,81.95,4575.58,Month-to-month,Yes
+106,Male,20,7,30.84,1831.36,One year,Yes
+107,Male,49,62,75.21,5483.44,Two year,No
+108,Female,53,52,25.08,5606.26,One year,No
+109,Female,68,17,27.3,2732.62,One year,Yes
+110,male ,44,45,111.23,7624.23,One year,No
+111,Female,28,13,87.65,2808.28,Two year,Yes
+112,Female,45,25,37.71,4614.1,One year,Yes
+113,Female,60,59,112.56,2838.49,Month-to-month,No
+114,Female,61,49,89.25,3667.84,Two year,No
+115,male ,53,51,63.51,3000.16,One year,No
+116,Male,60,50,77.35,7838.67,One year,No
+117,male ,21,54,96.0,4655.13,Month-to-month,Yes
+118,FEMALE,47,13,111.05,7906.94,One year,No
+119,male ,18,41,88.89,3647.5,Two year,Yes
+120,FEMALE,62,32,41.3,3307.91,Month-to-month,No
+121,Male,23,71,21.49,613.49,Two year,No
+122,Female,28,22,62.97,3279.94,Month-to-month,No
+123,male ,29,56,54.58,5150.66,Month-to-month,Yes
+124,Male,48,13,119.33,7463.26,Two year,No
+125,male ,60,8,82.93,995.19,Month-to-month,Yes
+126,FEMALE,35,41,92.08,914.88,Month-to-month,No
+127,FEMALE,36,27,39.61,3795.59,Month-to-month,Yes
+128,Male,19,39,94.64,6872.69,One year,No
+129,Male,40,56,48.89,1589.82,Month-to-month,Yes
+130,Female,52,40,99.1,5584.66,Month-to-month,No
+131,FEMALE,32,68,90.3,2241.08,One year,Yes
+132,FEMALE,64,44,41.3,6916.03,One year,No
+133,Female,67,30,39.55,4798.61,Two year,Yes
+134,FEMALE,62,28,52.47,4227.87,One year,No
+135,Female,53,11,91.91,5732.72,Month-to-month,Yes
+136,Male,64,43,81.41,4646.11,Two year,Yes
+137,Male,65,44,72.47,5525.42,One year,Yes
+138,male ,40,37,31.08,3956.27,One year,Yes
+139,male ,47,49,44.45,6024.4,Month-to-month,Yes
+140,Female,37,26,87.76,1023.18,One year,No
+141,FEMALE,59,53,55.26,349.16,Two year,Yes
+142,Female,18,44,40.1,3461.44,One year,No
+143,FEMALE,48,33,58.6,338.22,One year,No
+144,male ,54,5,35.58,1674.03,Two year,Yes
+145,Female,52,54,35.99,2548.13,One year,No
+146,male ,29,54,41.3,7503.52,Month-to-month,Yes
+147,FEMALE,39,65,84.32,1618.89,One year,Yes
+148,FEMALE,39,48,64.52,306.58,One year,Yes
+149,FEMALE,45,41,26.74,2350.46,One year,Yes
+150,FEMALE,37,50,22.01,4047.98,Two year,Yes
+151,Male,27,64,75.07,1626.53,Two year,No
+152,FEMALE,35,13,52.51,3666.19,Month-to-month,No
+153,male ,58,43,49.0,5307.73,Two year,No
+154,FEMALE,33,4,66.13,2839.25,One year,Yes
+155,Female,65,17,65.88,5583.36,Two year,No
+156,Male,28,3,115.92,1913.1,Month-to-month,No
+157,male ,67,26,73.17,3695.83,Two year,Yes
+158,FEMALE,22,54,94.97,1079.96,One year,No
+159,FEMALE,56,40,42.83,5025.71,Two year,No
+160,Male,31,3,106.94,1023.95,Two year,Yes
+161,male ,48,52,104.26,2072.54,One year,Yes
+162,Male,36,51,85.97,7017.69,Two year,Yes
+163,male ,24,58,43.71,5728.38,Two year,No
+164,Female,41,36,57.89,4773.42,One year,Yes
+165,Male,39,65,90.57,7699.3,Two year,Yes
+166,Male,44,2,119.15,642.86,Two year,No
+167,FEMALE,34,25,75.44,588.15,Month-to-month,No
+168,FEMALE,35,17,98.42,1501.15,One year,Yes
+169,male ,55,27,80.27,7001.13,Two year,Yes
+170,male ,24,53,89.33,7268.74,Month-to-month,Yes
+171,Female,47,35,27.46,5823.0,Two year,No
+172,FEMALE,65,14,55.44,337.34,One year,Yes
+173,Female,52,29,71.54,470.0,Two year,No
+174,Female,40,20,63.75,3253.23,Month-to-month,Yes
+175,male ,61,50,96.76,2882.19,One year,No
+176,Female,18,27,39.08,4854.45,Two year,No
+177,FEMALE,40,47,78.94,6876.87,One year,Yes
+178,FEMALE,44,24,104.03,3994.57,Month-to-month,No
+179,male ,18,26,42.92,3729.38,One year,Yes
+180,Male,22,71,47.85,5872.0,Two year,No
+181,FEMALE,69,36,68.32,4740.24,One year,No
+182,Female,69,5,37.5,5951.17,Two year,Yes
+183,Male,41,9,67.38,3015.92,Month-to-month,No
+184,Male,65,4,43.99,6480.99,One year,Yes
+185,male ,46,58,66.42,2961.62,Two year,No
+186,FEMALE,34,7,64.02,3481.47,Two year,No
+187,Female,65,48,73.08,2583.06,One year,Yes
+188,FEMALE,27,2,88.85,638.65,Two year,No
+189,male ,68,41,61.34,4968.92,One year,Yes
+190,male ,64,30,103.8,7869.3,Two year,No
+191,male ,68,29,91.09,3147.44,Month-to-month,No
+192,FEMALE,60,71,31.54,3443.96,One year,Yes
+193,Male,69,55,42.65,7562.38,One year,No
+194,FEMALE,34,11,92.15,5733.2,Two year,Yes
+195,Male,66,31,46.49,1035.2,Month-to-month,Yes
+196,Female,69,13,48.96,7040.57,Month-to-month,No
+197,FEMALE,25,38,60.06,977.08,Month-to-month,Yes
+198,male ,69,17,43.06,1077.28,One year,No
+199,male ,58,50,119.48,7467.55,Two year,Yes
+200,Female,18,44,78.08,145.46,Month-to-month,No
+201,male ,69,61,74.25,6718.9,One year,Yes
+202,Female,42,3,61.13,4154.28,One year,Yes
+203,FEMALE,67,23,32.03,6811.94,Month-to-month,No
+204,FEMALE,29,61,105.97,7964.25,Two year,Yes
+205,Female,65,27,59.39,7424.37,Month-to-month,Yes
+206,Male,34,23,49.58,453.4,One year,No
+207,FEMALE,56,50,91.64,4664.41,One year,No
+208,Female,64,27,44.8,4525.1,Month-to-month,No
+209,Male,41,36,33.92,6300.91,Two year,No
+210,FEMALE,42,9,112.28,6980.54,Month-to-month,Yes
+211,male ,43,19,106.76,1736.03,Two year,No
+212,Male,20,63,118.88,7725.65,Month-to-month,No
+213,FEMALE,25,43,88.76,3502.58,Two year,No
+214,FEMALE,55,9,51.22,4755.58,One year,No
+215,Female,27,45,82.24,3853.76,Month-to-month,No
+216,FEMALE,28,44,51.89,3677.95,Month-to-month,No
+217,Female,37,9,94.02,3624.52,One year,No
+218,FEMALE,30,47,76.99,7018.25,One year,Yes
+219,FEMALE,49,25,60.39,754.99,One year,Yes
+220,FEMALE,22,3,93.87,251.54,Two year,Yes
+221,Male,18,32,98.71,4980.24,One year,No
+222,Female,49,30,65.5,1223.4,Month-to-month,No
+223,Male,56,62,117.82,7908.68,One year,No
+224,FEMALE,44,29,102.23,6376.27,Month-to-month,Yes
+225,male ,28,27,109.62,6720.31,One year,No
+226,Female,32,13,34.31,3643.36,Month-to-month,No
+227,Female,67,62,98.97,700.49,Month-to-month,No
+228,Female,58,11,24.97,5951.91,One year,Yes
+229,FEMALE,32,48,109.5,7723.35,One year,Yes
+230,male ,23,70,62.39,1568.87,One year,No
+231,Male,67,22,78.58,5840.06,One year,Yes
+232,male ,34,13,53.29,7871.37,Month-to-month,No
+233,Male,45,43,59.41,6451.83,One year,No
+234,Male,23,55,74.36,5961.35,One year,Yes
+235,male ,50,11,30.94,4705.43,Two year,Yes
+236,FEMALE,27,11,97.27,2338.26,Month-to-month,No
+237,FEMALE,26,42,31.75,3714.17,Month-to-month,Yes
+238,Female,68,20,85.05,7255.39,One year,Yes
+239,Female,32,14,52.27,3075.08,Two year,Yes
+240,Male,30,8,56.84,7311.57,Two year,Yes
+241,Female,45,1,67.15,5202.04,Month-to-month,Yes
+242,Female,59,45,21.57,5435.75,Two year,Yes
+243,Female,47,57,34.62,932.77,One year,No
+244,Male,65,33,39.68,1022.6,Month-to-month,Yes
+245,male ,27,17,70.22,7434.34,One year,No
+246,FEMALE,58,33,49.83,5910.45,Month-to-month,Yes
+247,Male,68,57,45.8,2887.92,Month-to-month,No
+248,FEMALE,30,57,103.26,6598.83,Month-to-month,Yes
+249,FEMALE,51,2,29.91,6393.41,One year,Yes
+250,FEMALE,35,7,103.57,5819.96,Two year,No
+251,male ,20,6,44.95,6608.34,One year,Yes
+252,Male,64,40,38.66,2882.03,Two year,Yes
+253,Male,52,52,68.16,994.12,Month-to-month,No
+254,male ,40,6,26.46,7406.91,One year,No
+255,FEMALE,48,3,92.49,7004.56,Month-to-month,No
+256,Male,59,60,95.81,3515.03,Month-to-month,Yes
+257,Male,29,36,51.05,6130.64,Two year,No
+258,Male,42,29,90.53,2895.64,Two year,Yes
+259,male ,33,15,75.5,6757.05,Month-to-month,No
+260,Female,37,68,56.67,4600.62,One year,No
+261,Female,45,62,52.67,5631.08,Month-to-month,Yes
+262,FEMALE,43,12,109.8,7299.61,Month-to-month,No
+263,FEMALE,54,6,95.17,6954.87,Month-to-month,No
+264,FEMALE,63,12,102.99,7174.13,Month-to-month,No
+265,FEMALE,26,3,118.68,6173.93,Two year,Yes
+266,FEMALE,54,49,68.59,388.82,Month-to-month,Yes
+267,male ,50,63,50.06,6772.36,Two year,Yes
+268,male ,50,59,93.12,1814.48,Month-to-month,No
+269,Female,45,35,46.34,1161.92,Month-to-month,Yes
+270,Female,22,58,32.56,646.37,One year,No
+271,male ,30,6,118.39,5735.67,Two year,No
+272,Female,41,6,57.23,7225.87,Two year,Yes
+273,Female,23,58,73.22,5526.82,Month-to-month,No
+274,Male,43,53,45.51,5277.59,Month-to-month,No
+275,Male,68,35,97.52,7179.78,Two year,No
+276,male ,48,65,22.38,6337.94,Month-to-month,Yes
+277,Female,44,12,24.33,2217.49,Two year,Yes
+278,Male,59,48,42.37,2784.21,One year,No
+279,Female,40,37,42.99,6589.19,One year,Yes
+280,Male,50,7,104.12,4665.31,One year,Yes
+281,Female,69,71,68.65,6301.31,One year,No
+282,Male,45,53,91.18,7965.72,One year,No
+283,Male,56,20,110.28,3386.04,Month-to-month,Yes
+284,male ,42,51,112.65,6903.19,Two year,Yes
+285,male ,68,40,56.96,3871.06,Month-to-month,Yes
+286,FEMALE,44,53,41.59,1615.27,One year,No
+287,FEMALE,46,20,66.7,2964.37,One year,Yes
+288,Female,49,35,61.43,4750.53,One year,No
+289,Female,67,52,118.56,5667.97,Two year,No
+290,Female,50,65,85.79,6658.94,Month-to-month,Yes
+291,Male,57,18,93.15,2607.57,Month-to-month,No
+292,FEMALE,61,2,85.74,5384.13,One year,No
+293,Female,63,42,84.58,3176.3,Two year,No
+294,male ,23,22,42.28,2832.92,One year,No
+295,male ,25,52,36.72,1408.27,Two year,Yes
+296,Female,49,53,95.3,3136.08,Two year,No
+297,male ,24,62,22.7,5715.82,Month-to-month,Yes
+298,Male,27,34,51.97,7189.7,Two year,No
+299,Female,37,58,53.25,1087.79,One year,Yes
+300,FEMALE,34,56,41.38,6052.05,Month-to-month,No
