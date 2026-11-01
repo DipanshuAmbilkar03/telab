@@ -1,17 +1,16 @@
-# IIOT Experiments - Arduino IDE
+# IIOT Experiments - Arduino IDE (as per IIOT manual)
 
-Each experiment is a ready Arduino IDE sketch: the folder name and the .ino file name are the same, so just open the .ino file in Arduino IDE and upload.
+These experiments follow the IIOT practicals manual. Each folder is a ready Arduino IDE sketch: the folder name and the .ino file name are the same, so open the .ino file in Arduino IDE and upload.
 
-## One-time setup for ESP32 (exp1, exp3, exp4)
+## One-time setup for ESP32
 1. In Arduino IDE open File > Preferences.
 2. In "Additional boards manager URLs" add: https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
 3. Open Tools > Board > Boards Manager, search esp32, install "esp32 by Espressif Systems".
-4. For exp1, exp3, exp4 select board: ESP32 Dev Module.
+4. For all practicals here select board: ESP32 Dev Module, and set the Serial Monitor to 115200.
 
-## Experiments
-- exp1_potentiometer_alert: ESP32 + potentiometer on GPIO 34, prints warning on Serial Monitor when value crosses 2000. Board: ESP32 Dev Module. Serial Monitor: 115200.
-- exp2_pir_sensor_uno: Arduino Uno + PIR sensor on D2 + LED on D13. Board: Arduino Uno. Serial Monitor: 9600.
-- exp3_led_webserver: ESP32 web server, control LEDs on GPIO 12 and 14 from a browser page. Board: ESP32 Dev Module. Serial Monitor: 115200. Before uploading on real hardware, change WIFI_SSID and WIFI_PASSWORD at the top of the code to your own network or hotspot. After upload, open the IP address printed on the Serial Monitor in a browser.
-- exp4_potentiometer_webserver: ESP32 + potentiometer on GPIO 34, sensor value shown on a web page that refreshes every 2 seconds. Board: ESP32 Dev Module. Serial Monitor: 115200. Before uploading on real hardware, change ssid and password at the top of the code to your own network or hotspot.
+## Practicals
+- practical3_button_led: pushbutton on GPIO 4 switches an LED on GPIO 12, status on Serial Monitor.
+- practical4_thingspeak_potentiometer: potentiometer on GPIO 33, readings and voltage uploaded to ThingSpeak every 15 seconds. Set your own Wi-Fi details and ThingSpeak Write API Key in the code first.
+- practical5_dht11: DHT11 temperature and humidity sensor on GPIO 15. Needs the Adafruit DHT sensor library (see the practical's README).
 
-Each experiment folder also has diagram.json (the Wokwi wiring file) and a README.md with the parts list and every wiring connection, for performing the same circuit on hardware.
+Practical 2 is blank in the manual file (heading only, no aim or code), so it is not included here.
