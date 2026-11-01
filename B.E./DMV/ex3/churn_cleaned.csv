@@ -1,0 +1,301 @@
+customer_id,gender,age,tenure,monthly_charges,total_charges,contract,churn,avg_spend_per_month,tenure_group,churn_label
+1,Male,51,21,117.92,6825.09,Two year,No,325.00428571428574,Mid-term,0
+2,Female,56,28,28.16,6095.94,One year,Yes,217.71214285714285,Mid-term,1
+3,Female,25,32,55.84,3074.01,Two year,No,96.0628125,Mid-term,0
+4,Male,50,10,108.77,4773.68,Month-to-month,Yes,477.36800000000005,New,1
+5,Male,67,21,82.4,2290.87,Two year,No,109.08904761904762,Mid-term,0
+6,Female,36,23,112.24,7371.02,Two year,Yes,320.47913043478263,Mid-term,1
+7,Male,47,6,102.61,3395.32,Month-to-month,No,565.8866666666667,New,0
+8,Female,33,10,70.38,823.33,Month-to-month,Yes,82.333,New,1
+9,Male,63,22,70.12,5292.17,Two year,Yes,240.55318181818183,Mid-term,1
+10,Female,46,29,59.44,2193.65,Two year,No,75.64310344827587,Mid-term,0
+11,Male,38,42,35.34,1859.38,One year,Yes,44.27095238095238,Long-term,1
+12,Female,44,51,23.84,4970.63,Two year,Yes,97.46333333333334,Long-term,1
+13,Female,34,47,60.46,4564.66,Two year,No,97.12042553191489,Long-term,0
+14,Female,24,53,44.62,3827.65,Two year,No,72.21981132075472,Long-term,0
+15,Female,56,67,30.99,5044.43,One year,No,75.29,Long-term,0
+16,Female,42,66,66.67,2535.6,Two year,No,38.418181818181814,Long-term,0
+17,Female,24,18,40.62,3055.86,Two year,Yes,169.77,Mid-term,1
+18,Female,61,26,39.64,6299.89,Month-to-month,No,242.30346153846156,Mid-term,0
+19,Male,39,36,91.69,6968.19,Two year,No,193.56083333333333,Mid-term,0
+20,Male,67,26,68.36,3686.05,Two year,No,141.77115384615385,Mid-term,0
+21,Male,39,67,37.2,6832.75,One year,Yes,101.98134328358209,Long-term,1
+22,Male,59,9,47.47,3786.43,One year,No,420.71444444444444,New,0
+23,Female,54,67,110.38,5081.75,Month-to-month,No,75.84701492537313,Long-term,0
+24,Female,59,54,115.27,5134.25,Month-to-month,No,95.07870370370371,Long-term,0
+25,Female,58,19,84.56,4873.39,One year,No,256.4942105263158,Mid-term,0
+26,Male,37,39,50.15,2464.13,Month-to-month,Yes,63.18282051282051,Long-term,1
+27,Male,22,6,89.17,7256.32,Month-to-month,Yes,1209.3866666666665,New,1
+28,Male,52,33,90.97,3113.44,Month-to-month,Yes,94.34666666666666,Mid-term,1
+29,Female,30,11,90.51,6792.68,Month-to-month,No,617.5163636363636,New,0
+30,Female,33,59,46.02,4335.69,Two year,No,73.48627118644067,Long-term,0
+31,Female,65,4,100.93,4846.18,One year,No,1211.545,New,0
+32,Male,57,11,21.66,6839.09,Month-to-month,Yes,621.7354545454546,New,1
+33,Male,39,42,42.93,6791.47,Month-to-month,No,161.70166666666668,Long-term,0
+34,Female,19,24,22.5,5447.21,Two year,Yes,226.96708333333333,Mid-term,1
+35,Male,69,45,95.86,212.51,One year,Yes,4.722444444444444,Long-term,1
+36,Male,63,32,95.34,3704.34,Two year,Yes,115.760625,Mid-term,1
+37,Female,46,38,42.69,4881.15,Two year,No,128.45131578947368,Long-term,0
+38,Female,41,8,70.87,1704.38,One year,Yes,213.0475,New,1
+39,Female,54,61,82.2,5033.55,One year,Yes,82.5172131147541,Long-term,1
+40,Male,35,18,24.79,7991.25,Two year,Yes,443.9583333333333,Mid-term,1
+41,Male,36,12,20.97,732.6,Two year,Yes,61.050000000000004,New,1
+42,Male,46,28,20.21,3532.14,One year,Yes,126.14785714285713,Mid-term,1
+43,Male,45,7,31.96,5564.58,Month-to-month,No,794.9399999999999,New,0
+44,Female,69,18,116.81,2285.22,One year,Yes,126.95666666666665,Mid-term,1
+45,Female,60,32,61.77,2016.19,Month-to-month,No,63.0059375,Mid-term,0
+46,Female,56,7,84.47,1565.12,Month-to-month,Yes,223.5885714285714,New,1
+47,Female,28,6,117.13,1516.32,Two year,No,252.72,New,0
+48,Male,44,13,93.25,4669.93,One year,Yes,359.22538461538466,Mid-term,1
+49,Male,63,70,87.82,7502.73,Month-to-month,Yes,107.18185714285714,Long-term,1
+50,Male,51,25,61.62,6399.69,Month-to-month,No,255.9876,Mid-term,0
+51,Male,20,10,108.74,2968.39,One year,No,296.839,New,0
+52,Male,56,34,58.7,103.07,Month-to-month,Yes,3.031470588235294,Mid-term,1
+53,Male,50,53,103.49,2738.76,One year,No,51.67471698113208,Long-term,0
+54,Male,39,34,118.98,4842.23,Month-to-month,Yes,142.4185294117647,Mid-term,1
+55,Male,30,46,98.63,1330.24,Two year,Yes,28.918260869565216,Long-term,1
+56,Female,37,59,23.14,4946.76,One year,No,83.84338983050849,Long-term,0
+57,Female,36,63,59.07,731.56,Two year,Yes,11.612063492063491,Long-term,1
+58,Female,26,6,70.13,1660.08,Two year,No,276.68,New,0
+59,Female,29,52,109.88,667.67,Two year,No,12.83980769230769,Long-term,0
+60,Female,59,44,25.99,3030.79,One year,Yes,68.8815909090909,Long-term,1
+61,Male,41,13,68.42,3668.28,Two year,No,282.17538461538464,Mid-term,0
+62,Male,45,65,85.27,377.84,Month-to-month,No,5.812923076923076,Long-term,0
+63,Male,69,4,103.73,1686.84,Two year,Yes,421.71,New,1
+64,Female,34,70,62.42,2798.52,Two year,Yes,39.978857142857144,Long-term,1
+65,Male,22,8,60.62,4174.67,Two year,Yes,521.83375,New,1
+66,Female,65,39,42.83,2758.35,One year,No,70.72692307692307,Long-term,0
+67,Female,30,3,66.23,4424.87,One year,Yes,1474.9566666666667,New,1
+68,Female,52,65,105.85,2736.26,Month-to-month,Yes,42.0963076923077,Long-term,1
+69,Male,41,30,91.86,6195.09,One year,Yes,206.50300000000001,Mid-term,1
+70,Female,59,34,94.74,7605.87,Month-to-month,Yes,223.7020588235294,Mid-term,1
+71,Female,37,49,70.12,6393.94,Month-to-month,Yes,130.48857142857142,Long-term,1
+72,Male,51,53,86.04,6130.64,One year,No,115.67245283018869,Long-term,0
+73,Male,49,51,34.91,3962.55,Month-to-month,No,77.69705882352942,Long-term,0
+74,Male,35,66,73.5,3163.43,Two year,Yes,47.930757575757575,Long-term,1
+75,Female,43,42,89.32,7867.85,Two year,Yes,187.3297619047619,Long-term,1
+76,Female,27,41,27.25,1725.41,Two year,Yes,42.08317073170732,Long-term,1
+77,Female,18,62,70.02,7867.62,Month-to-month,No,126.89709677419354,Long-term,0
+78,Female,26,7,23.95,6574.87,One year,No,939.2671428571429,New,0
+79,Male,66,37,41.32,2028.14,Two year,No,54.814594594594595,Long-term,0
+80,Male,28,14,56.9,6990.7,Two year,No,499.3357142857143,Mid-term,0
+81,Male,26,46,104.76,943.06,Two year,No,20.501304347826085,Long-term,0
+82,Male,55,3,107.57,2509.13,Two year,Yes,836.3766666666667,New,1
+83,Female,53,63,20.05,6292.15,One year,No,99.87539682539682,Long-term,0
+84,Male,58,3,61.0,1450.94,One year,Yes,483.6466666666667,New,1
+85,Female,64,4,108.94,4838.34,One year,Yes,1209.585,New,1
+86,Male,53,11,78.52,5351.46,Month-to-month,No,486.49636363636364,New,0
+87,Male,32,64,94.69,6030.77,Month-to-month,No,94.23078125,Long-term,0
+88,Male,33,24,78.79,4222.55,Month-to-month,Yes,175.93958333333333,Mid-term,1
+89,Male,67,17,62.75,1686.94,Two year,No,99.23176470588236,Mid-term,0
+90,Male,62,63,73.32,1112.68,Month-to-month,Yes,17.661587301587304,Long-term,1
+91,Male,24,35,115.65,3340.57,Two year,Yes,95.44485714285715,Mid-term,1
+92,Male,51,29,107.82,2790.4,Month-to-month,Yes,96.22068965517242,Mid-term,1
+93,Male,52,18,86.11,5591.87,Two year,Yes,310.65944444444443,Mid-term,1
+94,Male,49,70,70.33,6683.52,Two year,No,95.47885714285715,Long-term,0
+95,Male,67,67,29.61,611.94,One year,Yes,9.133432835820896,Long-term,1
+96,Female,47,33,111.72,3689.99,Month-to-month,Yes,111.81787878787878,Mid-term,1
+97,Male,52,61,34.72,5294.04,One year,No,86.78754098360656,Long-term,0
+98,Female,51,6,37.7,7461.13,Month-to-month,No,1243.5216666666668,New,0
+99,Male,53,9,29.84,2332.82,One year,Yes,259.20222222222225,New,1
+100,Male,31,50,44.28,7827.1,Month-to-month,No,156.542,Long-term,0
+101,Male,30,17,22.06,5569.39,Two year,Yes,327.61117647058825,Mid-term,1
+102,Female,65,30,30.06,7259.8,Month-to-month,No,241.99333333333334,Mid-term,0
+103,Male,37,51,78.44,6478.34,One year,Yes,127.02627450980393,Long-term,1
+104,Male,63,51,39.91,3516.76,One year,Yes,68.95607843137255,Long-term,1
+105,Female,62,22,81.95,4575.58,Month-to-month,Yes,207.98090909090908,Mid-term,1
+106,Male,20,7,30.84,1831.36,One year,Yes,261.62285714285713,New,1
+107,Male,49,62,75.21,5483.44,Two year,No,88.44258064516129,Long-term,0
+108,Female,53,52,25.08,5606.26,One year,No,107.81269230769232,Long-term,0
+109,Female,68,17,27.3,2732.62,One year,Yes,160.74235294117648,Mid-term,1
+110,Male,44,45,111.23,7624.23,One year,No,169.42733333333334,Long-term,0
+111,Female,28,13,87.65,2808.28,Two year,Yes,216.02153846153848,Mid-term,1
+112,Female,45,25,37.71,4614.1,One year,Yes,184.56400000000002,Mid-term,1
+113,Female,60,59,112.56,2838.49,Month-to-month,No,48.11,Long-term,0
+114,Female,61,49,89.25,3667.84,Two year,No,74.85387755102042,Long-term,0
+115,Male,53,51,63.51,3000.16,One year,No,58.82666666666666,Long-term,0
+116,Male,60,50,77.35,7838.67,One year,No,156.7734,Long-term,0
+117,Male,21,54,96.0,4655.13,Month-to-month,Yes,86.20611111111111,Long-term,1
+118,Female,47,13,111.05,7906.94,One year,No,608.2261538461538,Mid-term,0
+119,Male,18,41,88.89,3647.5,Two year,Yes,88.96341463414635,Long-term,1
+120,Female,62,32,41.3,3307.91,Month-to-month,No,103.3721875,Mid-term,0
+121,Male,23,71,21.49,613.49,Two year,No,8.640704225352113,Long-term,0
+122,Female,28,22,62.97,3279.94,Month-to-month,No,149.08818181818182,Mid-term,0
+123,Male,29,56,54.58,5150.66,Month-to-month,Yes,91.97607142857143,Long-term,1
+124,Male,48,13,119.33,7463.26,Two year,No,574.0969230769231,Mid-term,0
+125,Male,60,8,82.93,995.19,Month-to-month,Yes,124.39875,New,1
+126,Female,35,41,92.08,914.88,Month-to-month,No,22.314146341463413,Long-term,0
+127,Female,36,27,39.61,3795.59,Month-to-month,Yes,140.5774074074074,Mid-term,1
+128,Male,19,39,94.64,6872.69,One year,No,176.2228205128205,Long-term,0
+129,Male,40,56,48.89,1589.82,Month-to-month,Yes,28.389642857142857,Long-term,1
+130,Female,52,40,99.1,5584.66,Month-to-month,No,139.6165,Long-term,0
+131,Female,32,68,90.3,2241.08,One year,Yes,32.95705882352941,Long-term,1
+132,Female,64,44,41.3,6916.03,One year,No,157.1825,Long-term,0
+133,Female,67,30,39.55,4798.61,Two year,Yes,159.95366666666666,Mid-term,1
+134,Female,62,28,52.47,4227.87,One year,No,150.99535714285713,Mid-term,0
+135,Female,53,11,91.91,5732.72,Month-to-month,Yes,521.1563636363636,New,1
+136,Male,64,43,81.41,4646.11,Two year,Yes,108.04906976744185,Long-term,1
+137,Male,65,44,72.47,5525.42,One year,Yes,125.57772727272727,Long-term,1
+138,Male,40,37,31.08,3956.27,One year,Yes,106.92621621621622,Long-term,1
+139,Male,47,49,44.45,6024.4,Month-to-month,Yes,122.94693877551019,Long-term,1
+140,Female,37,26,87.76,1023.18,One year,No,39.35307692307692,Mid-term,0
+141,Female,59,53,55.26,349.16,Two year,Yes,6.587924528301888,Long-term,1
+142,Female,18,44,40.1,3461.44,One year,No,78.66909090909091,Long-term,0
+143,Female,48,33,58.6,338.22,One year,No,10.24909090909091,Mid-term,0
+144,Male,54,5,35.58,1674.03,Two year,Yes,334.806,New,1
+145,Female,52,54,35.99,2548.13,One year,No,47.187592592592594,Long-term,0
+146,Male,29,54,41.3,7503.52,Month-to-month,Yes,138.95407407407407,Long-term,1
+147,Female,39,65,84.32,1618.89,One year,Yes,24.906000000000002,Long-term,1
+148,Female,39,48,64.52,306.58,One year,Yes,6.387083333333333,Long-term,1
+149,Female,45,41,26.74,2350.46,One year,Yes,57.32829268292683,Long-term,1
+150,Female,37,50,22.01,4047.98,Two year,Yes,80.9596,Long-term,1
+151,Male,27,64,75.07,1626.53,Two year,No,25.41453125,Long-term,0
+152,Female,35,13,52.51,3666.19,Month-to-month,No,282.0146153846154,Mid-term,0
+153,Male,58,43,49.0,5307.73,Two year,No,123.43558139534883,Long-term,0
+154,Female,33,4,66.13,2839.25,One year,Yes,709.8125,New,1
+155,Female,65,17,65.88,5583.36,Two year,No,328.4329411764706,Mid-term,0
+156,Male,28,3,115.92,1913.1,Month-to-month,No,637.6999999999999,New,0
+157,Male,67,26,73.17,3695.83,Two year,Yes,142.1473076923077,Mid-term,1
+158,Female,22,54,94.97,1079.96,One year,No,19.99925925925926,Long-term,0
+159,Female,56,40,42.83,5025.71,Two year,No,125.64275,Long-term,0
+160,Male,31,3,106.94,1023.95,Two year,Yes,341.31666666666666,New,1
+161,Male,48,52,104.26,2072.54,One year,Yes,39.85653846153846,Long-term,1
+162,Male,36,51,85.97,7017.69,Two year,Yes,137.60176470588235,Long-term,1
+163,Male,24,58,43.71,5728.38,Two year,No,98.76517241379311,Long-term,0
+164,Female,41,36,57.89,4773.42,One year,Yes,132.595,Mid-term,1
+165,Male,39,65,90.57,7699.3,Two year,Yes,118.45076923076924,Long-term,1
+166,Male,44,2,119.15,642.86,Two year,No,321.43,New,0
+167,Female,34,25,75.44,588.15,Month-to-month,No,23.526,Mid-term,0
+168,Female,35,17,98.42,1501.15,One year,Yes,88.3029411764706,Mid-term,1
+169,Male,55,27,80.27,7001.13,Two year,Yes,259.30111111111114,Mid-term,1
+170,Male,24,53,89.33,7268.74,Month-to-month,Yes,137.14603773584906,Long-term,1
+171,Female,47,35,27.46,5823.0,Two year,No,166.37142857142857,Mid-term,0
+172,Female,65,14,55.44,337.34,One year,Yes,24.095714285714283,Mid-term,1
+173,Female,52,29,71.54,470.0,Two year,No,16.20689655172414,Mid-term,0
+174,Female,40,20,63.75,3253.23,Month-to-month,Yes,162.6615,Mid-term,1
+175,Male,61,50,96.76,2882.19,One year,No,57.6438,Long-term,0
+176,Female,18,27,39.08,4854.45,Two year,No,179.79444444444445,Mid-term,0
+177,Female,40,47,78.94,6876.87,One year,Yes,146.3163829787234,Long-term,1
+178,Female,44,24,104.03,3994.57,Month-to-month,No,166.44041666666666,Mid-term,0
+179,Male,18,26,42.92,3729.38,One year,Yes,143.43769230769232,Mid-term,1
+180,Male,22,71,47.85,5872.0,Two year,No,82.70422535211267,Long-term,0
+181,Female,69,36,68.32,4740.24,One year,No,131.67333333333332,Mid-term,0
+182,Female,69,5,37.5,5951.17,Two year,Yes,1190.234,New,1
+183,Male,41,9,67.38,3015.92,Month-to-month,No,335.1022222222222,New,0
+184,Male,65,4,43.99,6480.99,One year,Yes,1620.2475,New,1
+185,Male,46,58,66.42,2961.62,Two year,No,51.062413793103445,Long-term,0
+186,Female,34,7,64.02,3481.47,Two year,No,497.3528571428571,New,0
+187,Female,65,48,73.08,2583.06,One year,Yes,53.81375,Long-term,1
+188,Female,27,2,88.85,638.65,Two year,No,319.325,New,0
+189,Male,68,41,61.34,4968.92,One year,Yes,121.19317073170731,Long-term,1
+190,Male,64,30,103.8,7869.3,Two year,No,262.31,Mid-term,0
+191,Male,68,29,91.09,3147.44,Month-to-month,No,108.53241379310344,Mid-term,0
+192,Female,60,71,31.54,3443.96,One year,Yes,48.50647887323944,Long-term,1
+193,Male,69,55,42.65,7562.38,One year,No,137.4978181818182,Long-term,0
+194,Female,34,11,92.15,5733.2,Two year,Yes,521.1999999999999,New,1
+195,Male,66,31,46.49,1035.2,Month-to-month,Yes,33.39354838709678,Mid-term,1
+196,Female,69,13,48.96,7040.57,Month-to-month,No,541.5823076923077,Mid-term,0
+197,Female,25,38,60.06,977.08,Month-to-month,Yes,25.71263157894737,Long-term,1
+198,Male,69,17,43.06,1077.28,One year,No,63.36941176470588,Mid-term,0
+199,Male,58,50,119.48,7467.55,Two year,Yes,149.351,Long-term,1
+200,Female,18,44,78.08,145.46,Month-to-month,No,3.305909090909091,Long-term,0
+201,Male,69,61,74.25,6718.9,One year,Yes,110.14590163934426,Long-term,1
+202,Female,42,3,61.13,4154.28,One year,Yes,1384.76,New,1
+203,Female,67,23,32.03,6811.94,Month-to-month,No,296.1713043478261,Mid-term,0
+204,Female,29,61,105.97,7964.25,Two year,Yes,130.56147540983608,Long-term,1
+205,Female,65,27,59.39,7424.37,Month-to-month,Yes,274.9766666666667,Mid-term,1
+206,Male,34,23,49.58,453.4,One year,No,19.713043478260868,Mid-term,0
+207,Female,56,50,91.64,4664.41,One year,No,93.2882,Long-term,0
+208,Female,64,27,44.8,4525.1,Month-to-month,No,167.59629629629632,Mid-term,0
+209,Male,41,36,33.92,6300.91,Two year,No,175.02527777777777,Mid-term,0
+210,Female,42,9,112.28,6980.54,Month-to-month,Yes,775.6155555555556,New,1
+211,Male,43,19,106.76,1736.03,Two year,No,91.37,Mid-term,0
+212,Male,20,63,118.88,7725.65,Month-to-month,No,122.62936507936507,Long-term,0
+213,Female,25,43,88.76,3502.58,Two year,No,81.4553488372093,Long-term,0
+214,Female,55,9,51.22,4755.58,One year,No,528.3977777777777,New,0
+215,Female,27,45,82.24,3853.76,Month-to-month,No,85.63911111111112,Long-term,0
+216,Female,28,44,51.89,3677.95,Month-to-month,No,83.58977272727272,Long-term,0
+217,Female,37,9,94.02,3624.52,One year,No,402.72444444444443,New,0
+218,Female,30,47,76.99,7018.25,One year,Yes,149.3244680851064,Long-term,1
+219,Female,49,25,60.39,754.99,One year,Yes,30.1996,Mid-term,1
+220,Female,22,3,93.87,251.54,Two year,Yes,83.84666666666666,New,1
+221,Male,18,32,98.71,4980.24,One year,No,155.6325,Mid-term,0
+222,Female,49,30,65.5,1223.4,Month-to-month,No,40.78,Mid-term,0
+223,Male,56,62,117.82,7908.68,One year,No,127.55935483870968,Long-term,0
+224,Female,44,29,102.23,6376.27,Month-to-month,Yes,219.87137931034485,Mid-term,1
+225,Male,28,27,109.62,6720.31,One year,No,248.90037037037038,Mid-term,0
+226,Female,32,13,34.31,3643.36,Month-to-month,No,280.2584615384616,Mid-term,0
+227,Female,67,62,98.97,700.49,Month-to-month,No,11.298225806451613,Long-term,0
+228,Female,58,11,24.97,5951.91,One year,Yes,541.0827272727273,New,1
+229,Female,32,48,109.5,7723.35,One year,Yes,160.90312500000002,Long-term,1
+230,Male,23,70,62.39,1568.87,One year,No,22.41242857142857,Long-term,0
+231,Male,67,22,78.58,5840.06,One year,Yes,265.45727272727277,Mid-term,1
+232,Male,34,13,53.29,7871.37,Month-to-month,No,605.49,Mid-term,0
+233,Male,45,43,59.41,6451.83,One year,No,150.0425581395349,Long-term,0
+234,Male,23,55,74.36,5961.35,One year,Yes,108.38818181818182,Long-term,1
+235,Male,50,11,30.94,4705.43,Two year,Yes,427.7663636363637,New,1
+236,Female,27,11,97.27,2338.26,Month-to-month,No,212.56909090909093,New,0
+237,Female,26,42,31.75,3714.17,Month-to-month,Yes,88.43261904761906,Long-term,1
+238,Female,68,20,85.05,7255.39,One year,Yes,362.7695,Mid-term,1
+239,Female,32,14,52.27,3075.08,Two year,Yes,219.64857142857142,Mid-term,1
+240,Male,30,8,56.84,7311.57,Two year,Yes,913.94625,New,1
+241,Female,45,1,67.15,5202.04,Month-to-month,Yes,5202.04,New,1
+242,Female,59,45,21.57,5435.75,Two year,Yes,120.79444444444445,Long-term,1
+243,Female,47,57,34.62,932.77,One year,No,16.36438596491228,Long-term,0
+244,Male,65,33,39.68,1022.6,Month-to-month,Yes,30.98787878787879,Mid-term,1
+245,Male,27,17,70.22,7434.34,One year,No,437.3141176470588,Mid-term,0
+246,Female,58,33,49.83,5910.45,Month-to-month,Yes,179.10454545454544,Mid-term,1
+247,Male,68,57,45.8,2887.92,Month-to-month,No,50.665263157894735,Long-term,0
+248,Female,30,57,103.26,6598.83,Month-to-month,Yes,115.76894736842105,Long-term,1
+249,Female,51,2,29.91,6393.41,One year,Yes,3196.705,New,1
+250,Female,35,7,103.57,5819.96,Two year,No,831.4228571428572,New,0
+251,Male,20,6,44.95,6608.34,One year,Yes,1101.39,New,1
+252,Male,64,40,38.66,2882.03,Two year,Yes,72.05075000000001,Long-term,1
+253,Male,52,52,68.16,994.12,Month-to-month,No,19.11769230769231,Long-term,0
+254,Male,40,6,26.46,7406.91,One year,No,1234.485,New,0
+255,Female,48,3,92.49,7004.56,Month-to-month,No,2334.8533333333335,New,0
+256,Male,59,60,95.81,3515.03,Month-to-month,Yes,58.58383333333334,Long-term,1
+257,Male,29,36,51.05,6130.64,Two year,No,170.29555555555555,Mid-term,0
+258,Male,42,29,90.53,2895.64,Two year,Yes,99.84965517241379,Mid-term,1
+259,Male,33,15,75.5,6757.05,Month-to-month,No,450.47,Mid-term,0
+260,Female,37,68,56.67,4600.62,One year,No,67.65617647058824,Long-term,0
+261,Female,45,62,52.67,5631.08,Month-to-month,Yes,90.82387096774194,Long-term,1
+262,Female,43,12,109.8,7299.61,Month-to-month,No,608.3008333333333,New,0
+263,Female,54,6,95.17,6954.87,Month-to-month,No,1159.145,New,0
+264,Female,63,12,102.99,7174.13,Month-to-month,No,597.8441666666666,New,0
+265,Female,26,3,118.68,6173.93,Two year,Yes,2057.976666666667,New,1
+266,Female,54,49,68.59,388.82,Month-to-month,Yes,7.935102040816326,Long-term,1
+267,Male,50,63,50.06,6772.36,Two year,Yes,107.49777777777777,Long-term,1
+268,Male,50,59,93.12,1814.48,Month-to-month,No,30.753898305084746,Long-term,0
+269,Female,45,35,46.34,1161.92,Month-to-month,Yes,33.19771428571429,Mid-term,1
+270,Female,22,58,32.56,646.37,One year,No,11.144310344827586,Long-term,0
+271,Male,30,6,118.39,5735.67,Two year,No,955.945,New,0
+272,Female,41,6,57.23,7225.87,Two year,Yes,1204.3116666666667,New,1
+273,Female,23,58,73.22,5526.82,Month-to-month,No,95.28999999999999,Long-term,0
+274,Male,43,53,45.51,5277.59,Month-to-month,No,99.57716981132076,Long-term,0
+275,Male,68,35,97.52,7179.78,Two year,No,205.13657142857141,Mid-term,0
+276,Male,48,65,22.38,6337.94,Month-to-month,Yes,97.50676923076922,Long-term,1
+277,Female,44,12,24.33,2217.49,Two year,Yes,184.79083333333332,New,1
+278,Male,59,48,42.37,2784.21,One year,No,58.004375,Long-term,0
+279,Female,40,37,42.99,6589.19,One year,Yes,178.0862162162162,Long-term,1
+280,Male,50,7,104.12,4665.31,One year,Yes,666.4728571428572,New,1
+281,Female,69,71,68.65,6301.31,One year,No,88.75084507042254,Long-term,0
+282,Male,45,53,91.18,7965.72,One year,No,150.2966037735849,Long-term,0
+283,Male,56,20,110.28,3386.04,Month-to-month,Yes,169.302,Mid-term,1
+284,Male,42,51,112.65,6903.19,Two year,Yes,135.35666666666665,Long-term,1
+285,Male,68,40,56.96,3871.06,Month-to-month,Yes,96.7765,Long-term,1
+286,Female,44,53,41.59,1615.27,One year,No,30.47679245283019,Long-term,0
+287,Female,46,20,66.7,2964.37,One year,Yes,148.2185,Mid-term,1
+288,Female,49,35,61.43,4750.53,One year,No,135.72942857142857,Mid-term,0
+289,Female,67,52,118.56,5667.97,Two year,No,108.99942307692308,Long-term,0
+290,Female,50,65,85.79,6658.94,Month-to-month,Yes,102.44523076923076,Long-term,1
+291,Male,57,18,93.15,2607.57,Month-to-month,No,144.865,Mid-term,0
+292,Female,61,2,85.74,5384.13,One year,No,2692.065,New,0
+293,Female,63,42,84.58,3176.3,Two year,No,75.62619047619049,Long-term,0
+294,Male,23,22,42.28,2832.92,One year,No,128.76909090909092,Mid-term,0
+295,Male,25,52,36.72,1408.27,Two year,Yes,27.082115384615385,Long-term,1
+296,Female,49,53,95.3,3136.08,Two year,No,59.17132075471698,Long-term,0
+297,Male,24,62,22.7,5715.82,Month-to-month,Yes,92.19064516129032,Long-term,1
+298,Male,27,34,51.97,7189.7,Two year,No,211.46176470588236,Mid-term,0
+299,Female,37,58,53.25,1087.79,One year,Yes,18.755,Long-term,1
+300,Female,34,56,41.38,6052.05,Month-to-month,No,108.07232142857143,Long-term,0
