@@ -1,18 +1,25 @@
-# IIOT Experiments - Arduino IDE
+# IIOT - Computer Laboratory II (417526)
 
-Each experiment is a ready Arduino IDE sketch: the folder name and the .ino file name are the same, so just open the .ino file in Arduino IDE and upload.
+Lab manual: *Lab Manual - Computer Laboratory II: Industrial Internet of Things (417526), BE (AI&DS), ADYPSOE* (Course Coordinator: Prof. Sandeep Kumar). A copy of the manual PDF is in `B.E./manuals/IIOT_Lab_Manual.pdf`.
 
-## One-time setup for ESP32 (exp1, practical3, practical4, practical5)
-1. In Arduino IDE open File > Preferences.
-2. In "Additional boards manager URLs" add: https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
-3. Open Tools > Board > Boards Manager, search esp32, install "esp32 by Espressif Systems".
-4. Select board: ESP32 Dev Module. Serial Monitor: 115200.
+Every experiment is kept in **two versions**:
 
-## Experiments
-- exp1_potentiometer_alert: ESP32 + potentiometer on GPIO 34, prints "warning" on Serial Monitor when the value crosses 2000. (From the Wokwi project "IIOT experiment 1". Practical 1 is not given in the manual file.)
-- exp2_pir_sensor_uno: Arduino Uno + PIR sensor on D2 + LED on D13, prints motion status. Board: Arduino Uno. Serial Monitor: 9600. (From the Wokwi project "IIOT experiment 2". Practical 2 is blank in the manual file.)
-- practical3_button_led: as per IIOT manual, pushbutton on GPIO 4 switches an LED on GPIO 12, status on Serial Monitor.
-- practical4_thingspeak_potentiometer: as per IIOT manual, potentiometer on GPIO 33, readings and voltage uploaded to ThingSpeak every 15 seconds. Set your own Wi-Fi details and ThingSpeak Write API Key in the code first.
-- practical5_dht11: DHT11 temperature and humidity sensor on GPIO 15. Needs the Adafruit DHT sensor library (see the practical's README).
+- **`wokwi/`** - simulation version: Arduino sketch (.ino) + `diagram.json` (the Wokwi connections). Import the folder into Wokwi to run it.
+- **`hardware/`** - actual hardware version: the same code (Wi-Fi versions point at your own hotspot) + a README with the manual's hardware list and step-by-step connections.
 
-Every experiment folder has a README.md with the aim, components and full wiring for performing it on hardware. exp1 and exp2 folders also keep their Wokwi diagram.json.
+## Experiment list (as per the manual)
+
+| No | Experiment | Wokwi | Hardware |
+|----|------------|-------|----------|
+| 1 | Alert message on potentiometer threshold - ESP32, pot on GPIO 34, prints "warning" above 2000 | exp1_potentiometer_alert | exp1_potentiometer_alert |
+| 2 | PIR sensor interfacing - Arduino Uno, PIR OUT on pin 2, LED on pin 13 | exp2_pir_sensor_uno | exp2_pir_sensor_uno |
+| 3 | User interface for monitoring and controlling a CPS system - ESP32 LED web server, LEDs on GPIO 12 and 14 | exp3_led_webserver | exp3_led_webserver |
+| 4 | Sensor data to the cloud / web page - ESP32 web server showing the potentiometer value (GPIO 34) | exp4_potentiometer_webserver | exp4_potentiometer_webserver |
+| 5 | Industrial data analysis - Farm Temperature and Humidity in Excel (Python version of the same steps included) | exp5_data_analysis_excel | exp5_data_analysis_excel |
+
+Experiment 5 has no circuit; it is an Excel data-analysis practical, so both trees carry the same data, script and graphs.
+
+## Arduino IDE setup (ESP32 experiments)
+1. Arduino IDE > Preferences > Additional boards manager URLs: add the ESP32 URL from Espressif.
+2. Tools > Board > Boards Manager: install "esp32 by Espressif Systems".
+3. Select your ESP32 board and the correct COM port (install the CH340G driver if the port does not appear).
