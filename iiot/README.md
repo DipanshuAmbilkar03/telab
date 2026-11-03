@@ -1,6 +1,6 @@
 # IIOT - Computer Laboratory II (417526)
 
-Lab manual: *Lab Manual - Computer Laboratory II: Industrial Internet of Things (417526), BE (AI&DS), ADYPSOE* (Course Coordinator: Prof. Sandeep Kumar). A copy of the manual PDF is in `B.E./manuals/IIOT_Lab_Manual.pdf`.
+Lab manual: *Lab Manual - Computer Laboratory II: Industrial Internet of Things (417526), BE (AI&DS), ADYPSOE* (Course Coordinator: Prof. Sandeep Kumar). A copy of the manual PDF is in `manuals/IIOT_Lab_Manual.pdf`.
 
 Every experiment is kept in **two versions**:
 
