@@ -7,3 +7,5 @@ Experiment 5 of the IIOT manual is performed in Excel, not with a circuit. This 
 - `exp5_data_analysis.py` - the same steps done in Python (pandas + matplotlib), kept for reference only. The practical itself is the Excel workbook.
 
 Main observations: temperature peaks at 12 o'clock (hour 12, and again at hour 36 in 48 hrs), humidity rises at night and falls around 1 pm (hour 13, again at hour 37).
+
+For what to say about this Excel file in the practical/viva (aim, steps, sheet-by-sheet explanation, observations and expected questions), see `EXPLAIN_IN_PRACTICAL.md` in this folder.
