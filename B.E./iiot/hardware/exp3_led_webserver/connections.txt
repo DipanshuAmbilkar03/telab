@@ -1,0 +1,14 @@
+Experiment 3: LED Web Server (Monitoring and Controlling a CPS System)
+Connections (actual hardware, ESP32)
+
+ESP32 (USB cable) -> Laptop (for power and upload; phone/laptop on the same Wi-Fi hotspot opens the web page)
+
+LED 1:
+  GPIO 12 of ESP32 -> 220 ohm resistor -> Anode (long leg) of LED 1
+  Cathode (short leg) of LED 1 -> GND of ESP32
+
+LED 2:
+  GPIO 14 of ESP32 -> 220 ohm resistor -> Anode (long leg) of LED 2
+  Cathode (short leg) of LED 2 -> GND of ESP32
+
+Same wiring is in diagram.json in this folder.

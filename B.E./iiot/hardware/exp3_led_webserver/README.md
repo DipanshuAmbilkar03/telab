@@ -11,6 +11,8 @@
 2. GPIO 12 -> 220 ohm resistor -> anode (long leg) of LED 1; LED 1 cathode -> GND.
 3. GPIO 14 -> 220 ohm resistor -> anode (long leg) of LED 2; LED 2 cathode -> GND.
 
+The same connections are also saved separately in this folder as `connections.txt` and `diagram.json`.
+
 ## How to run
 1. In the code, set WIFI_SSID and WIFI_PASSWORD to your hotspot name and password.
 2. Upload the code from Arduino IDE (select the ESP32 board and the right port).

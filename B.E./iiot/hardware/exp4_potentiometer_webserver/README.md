@@ -12,6 +12,8 @@
 3. Potentiometer one side pin (red) -> 3.3V of ESP32.
 4. Potentiometer other side pin (orange) -> GND of ESP32.
 
+The same connections are also saved separately in this folder as `connections.txt` and `diagram.json`.
+
 ## How to run
 1. In the code, set ssid and password to your hotspot name and password.
 2. Upload the code from Arduino IDE (select the ESP32 board and the right port).

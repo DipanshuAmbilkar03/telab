@@ -1,0 +1,11 @@
+Experiment 1: Alert Message using Potentiometer
+Connections (actual hardware, ESP32)
+
+ESP32 (USB cable) -> Laptop (for power, upload and Serial Monitor)
+
+Potentiometer 10K (placed on breadboard):
+  Middle pin (signal)  -> GPIO 34 of ESP32
+  One side pin (red)   -> 3.3V of ESP32
+  Other side pin (orange) -> GND of ESP32
+
+Same wiring is in diagram.json in this folder.

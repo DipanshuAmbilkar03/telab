@@ -1,0 +1,15 @@
+Experiment 2: Interfacing PIR Sensor with Arduino Uno
+Connections (actual hardware, Arduino Uno)
+
+Arduino Uno (USB cable) -> Laptop (for power, upload and Serial Monitor)
+
+PIR motion sensor:
+  GND pin -> GND of Arduino Uno
+  VCC pin -> 5V of Arduino Uno
+  OUT pin (signal) -> Pin 2 of Arduino Uno
+
+LED:
+  Anode (long leg)   -> Pin 13 of Arduino Uno (through a 220 ohm resistor)
+  Cathode (short leg) -> GND of Arduino Uno
+
+Same wiring is in diagram.json in this folder.

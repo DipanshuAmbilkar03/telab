@@ -1,0 +1,11 @@
+Experiment 4: Sending Sensor Data to the Cloud / Web Page
+Connections (actual hardware, ESP32)
+
+ESP32 (USB cable) -> Laptop (for power and upload; phone/laptop on the same Wi-Fi hotspot opens the web page)
+
+Potentiometer 10K (placed on breadboard):
+  Middle pin (signal)  -> GPIO 34 of ESP32
+  One side pin (red)   -> 3.3V of ESP32
+  Other side pin (orange) -> GND of ESP32
+
+Same wiring is in diagram.json in this folder.

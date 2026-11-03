@@ -13,6 +13,8 @@
 4. LED anode (long leg) -> pin 13 of Arduino through a 220 ohm resistor.
 5. LED cathode (short leg) -> GND of Arduino.
 
+The same connections are also saved separately in this folder as `connections.txt` and `diagram.json`.
+
 ## How to run
 1. Open the .ino file in Arduino IDE, select Arduino Uno and the right port.
 2. Upload the code.
